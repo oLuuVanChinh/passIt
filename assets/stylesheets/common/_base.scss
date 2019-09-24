@@ -1,0 +1,148 @@
+/**
+ * Base Rules
+ */
+@import "variables";
+@import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap');
+
+html, body {
+    height: 100vh;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: $titleFont;
+}
+h1{
+    font-size: $baseFontSize + 34;
+}
+
+.text-xlarge{
+    font-size: $fontXlarge;
+}
+
+.text-large{
+    font-size: $fontLarge;
+}
+
+.text-medium{
+    font-size: $fontMedium;
+}
+
+*{
+    outline: none;
+}
+
+/* General Class */
+a {
+    color: $link;
+    &:hover {
+        color: $linkHover;
+        text-decoration: none;
+    }
+    &:focus{
+        color: $linkHover;
+        text-decoration: none;
+    }
+}
+
+label {
+    font-weight: normal;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.color-white{
+    color: $whiteColor !important;
+}
+
+.color-accent{
+    color: $accent !important;
+}
+
+.bg-accent{
+    background-color: $accent !important;
+}
+
+.color-blue{
+    color: $blueColor !important;
+}
+
+.bg-blue{
+    background-color: $blueColor !important;
+}
+
+.color-orange{
+    color: $orangeColor !important;
+}
+
+.bg-orange{
+    background-color: $orangeColor !important;
+}
+
+.color-gray{
+    color: $grayColor !important;
+}
+
+/* Transition General */
+a {
+    @include css3-compatible("transition", all 0.3s linear 0s);
+}
+
+/* Button general */
+.dgt-button {
+    padding: 0 15px;
+    display: inline-flex;
+    color: $buttonColor;
+    background-color: $buttonBg;
+    text-align: center;
+    @include border-radius(4px, 4px, 4px, 4px);
+    font-size: $baseFontSize + 4;
+    margin: 0;
+    position: relative;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    text-transform: uppercase;
+    i{
+        margin-right: 8px;
+        font-size: 20px;
+    }
+    &:hover, &:focus {
+        color: $whiteColor;
+        text-decoration: none;
+    }
+}
+
+.button-white{
+    border: 2px solid #fff;
+    background-color: rgba(255,255,255,0.1);
+    height: 40px;
+    font-size: 16px;
+}
+
+/* Title */
+.dgt-title {
+    font-size: $baseFontSize + 18;
+    line-height: $baseLineHeight + 18;
+    color: $titleColor;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 10px;
+    text-align: center;
+    &:after{
+        content: "";
+        background: url("../../images/deco.jpg") no-repeat center center;
+        display: block;
+        height: 12px;
+        margin: 2px 0 0;
+    }
+}
+/* Content */
+#content{
+    padding: 45px 0;
+}

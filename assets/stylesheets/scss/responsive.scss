@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@import "../common/base";
+@import "../common/variables";
+@import "../common/mixins";
+
+/* For screen minx width 767px */
+@media screen and (min-width: 768px) {
+}
+
+/* For screen width from 1200px to 1366px */
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (max-width: 767px) {
+}

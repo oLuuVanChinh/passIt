@@ -1,0 +1,43 @@
+// Variables
+// Typograyphy
+$baseFontSize: 14px;
+$baseLineHeight: 24px;
+$fontMedium: $baseFontSize + 2;
+$fontLarge: $baseFontSize + 6;
+$fontXlarge: $baseFontSize + 10;
+$fontSmall: $baseFontSize - 2;
+
+// Color default using.
+$accent: #914EF9 !default;
+$second: #13233A !default;
+$blueColor: #4584C5 !default;
+$whiteColor: #ffffff !default;
+$blackColor: #000000 !default;
+$orangeColor: #F79043 !default;
+$grayColor: #818995 !default;
+$titleColor: #000000 !default;
+$textColor: #07171E !default;
+$blueColor: #131313 !default;
+$inputColor: #131313 !default;
+$inputPlaceholder: #9B9B9B !default;
+
+// Color Link
+$link: #232323 !default;
+$linkHover: #E38354 !default;
+$navLink: #7B7B7B !default;
+
+// Button
+$buttonBg: #914EF9 !default;
+$buttonColor: #ffffff !default;
+// Container
+$accountContainer: 370px;
+
+//font-family
+$defaultFont: 'Open Sans', sans-serif;
+$titleFont: 'Raleway', sans-serif;
+
+// Base images url
+$imageUrl: "../../images/";
+
+// Animate
+$delayTime: 200ms;
