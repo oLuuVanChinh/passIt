@@ -88,7 +88,8 @@ ul{
 }
 
 /* Transition General */
-a {
+a,
+.menu-user .sub-menu{
     @include css3-compatible("transition", all 0.3s linear 0s);
 }
 
