@@ -24,6 +24,13 @@ body {
     margin: 0;
 }
 
+.alt-box{
+    margin-left: calc((100vw - 1110px) / (-2));
+    margin-right: calc((100vw - 1110px) / (-2));
+    padding-left: calc((100vw - 1110px) / (2));
+    padding-right: calc((100vw - 1110px) / (2));
+}
+
 .form-group {
     margin-bottom: 22px;
     button {
@@ -77,6 +84,48 @@ textarea.form-control {
     text-align: center;
 }
 
+.header-right {
+    right: 12px;
+    position: absolute;
+    top: 50%;
+    @include css3-compatible("transform", translateY(-50%));
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    .nav-link{
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+}
+.coupon-info{
+    background-color: #F0E6FF;
+    border: 2px solid $accent;
+    border-radius: 4px;
+    padding: 0 16px 2px 10px;
+    margin-left: 7px;
+    .icon{
+        margin-right: 8px;
+    }
+    .coupon{
+        color: $accent;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: normal;
+        .coupon-code{
+            font-size: 16px;
+        }
+    }
+}
+.dropdown-toggle{
+    &:after {
+        border-top: 0.5em solid;
+        border-right: .5em solid transparent;
+        border-left: .5em solid transparent;
+        border-radius: 10px;
+    }
+}
+
 /* Logo */
 #logo {
     margin: 20px 0 16px;
@@ -113,6 +162,19 @@ textarea.form-control {
         right: 24px;
         top: 10px;
         text-transform: capitalize;
+    }
+    .price{
+        position: absolute;
+        left: 25px;
+        top: 10px;
+        label{
+            margin-right: 10px;
+        }
+        span{
+            height: 40px;
+            min-width: 105px;
+            font-size: 24px;
+        }
     }
 }
 
@@ -180,11 +242,193 @@ textarea.form-control {
     height: 220px;
     display: flex;
     align-items: center;
+    margin-top: 40px;
+    margin-bottom: 35px;
 }
 .payment{
     background-color: #F7F7F7;
     border: 1px solid rgba(116, 122, 138, 0.4);
     border-radius: 5px;
+    padding: 30px 0;
+    .title{
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $accent;
+        font-weight: bold;
+        margin: 13px 0 17px;
+        display: block;
+    }
+}
+.form-coupon{
+    margin: 36px 0 0;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    label{
+        font-size: 16px;
+        margin-right: 18px;
+    }
+    span{
+        min-width: 127px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $accent;
+        color: #fff;
+        font-size: 28px;
+        font-weight: bold;
+        border-radius: 4px;
+        &.old{
+            background-color: #F7F7F7;
+            color: #000;
+            border: 1px solid rgba(116, 122, 138, 0.4);
+            text-decoration: line-through;
+        }
+        &.white{
+            background-color: rgba(255,255,255,0.1);
+            color: #fff;
+            border: 2px solid #fff;
+        }
+    }
+    &.medium{
+        font-size: 24px;
+    }
+    &.small{
+        font-size: 16px;
+    }
+}
+.payment-paypal{
+    h3{
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 28px;
+    }
+}
+.payment-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    margin-top: 30px;
+    margin-bottom: 120px;
+    .dgt-button{
+        width: 360px;
+        height: 64px;
+    }
+}
+.payment-complete{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.2;
+    h3{
+        font-size: 24px;
+        font-weight: bold;
+        padding: 6px 0 40px;
+        text-transform: uppercase;
+        display: block;
+    }
+}
+.payment-tutorials{
+    h3{
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+}
+/* Wallet */
+.section-wallet .btn-group,
+.total-income .title{
+    border-bottom: 1px solid $accent;
+}
+.section-wallet{
+    margin-top: 40px;
+    .btn-group{
+        width: 100%;
+        padding-bottom: 25px;
+    }
+}
+.btn-group{
+    button{
+        margin-right: 24px;
+        width: 140px;
+        height: 40px;
+        &:first-child, &:last-child{
+            width: 40px;
+        }
+    }
+}
+.total-income {
+    .title{
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 11px 0 35px;
+        margin: 0;
+    }
+}
+.view-statement{
+    padding: 0 28px 0 15px;
+    max-height: 500px;
+    overflow-y: auto;
+    position: relative;
+    .item{
+        align-items: center;
+        font-size: 16px;
+        > * {
+            -ms-flex-preferred-size: 0;
+            flex-basis: 0;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+    }
+    .title{
+        flex: 0 0 37%;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .price{
+        margin-right: 15px;
+    }
+    .status{
+        text-align: center;
+        color: #FF0000;
+    }
+}
+.items{
+    .item{
+        min-height: 62px;
+        border-bottom: 1px solid #747A8A;
+    }
+    .total{
+        margin: 19px 0 16px;
+        .item{
+            border: none;
+            min-height: 42px;
+        }
+    }
+}
+.statement-button{
+    .dgt-button{
+        margin: 60px 50px 0;
+    }
+}
+.total-info{
+    padding-left: 15px;
+    font-size: 16px;
+}
+.total-button{
+    .dgt-button{
+        width: 100%;
+    }
 }
 @import "responsive";
 

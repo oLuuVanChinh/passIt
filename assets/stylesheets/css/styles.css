@@ -28,10 +28,10 @@ h1 {
 a {
   color: #232323; }
   a:hover {
-    color: #E38354;
+    color: #914EF9;
     text-decoration: none; }
   a:focus {
-    color: #E38354;
+    color: #914EF9;
     text-decoration: none; }
 
 label {
@@ -53,10 +53,10 @@ ul {
   background-color: #914EF9 !important; }
 
 .color-blue {
-  color: #4584C5 !important; }
+  color: #26DA38 !important; }
 
 .bg-blue {
-  background-color: #4584C5 !important; }
+  background-color: #26DA38 !important; }
 
 .color-orange {
   color: #F79043 !important; }
@@ -116,6 +116,48 @@ a {
   height: 40px;
   font-size: 16px; }
 
+.button-light {
+  border: 1px solid #914EF9;
+  background-color: #F7F7F7;
+  font-size: 24px;
+  color: #914EF9;
+  border-radius: 32px; }
+  .button-light:after {
+    border: 1px solid #914EF9;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    content: "";
+    position: absolute;
+    border-radius: 32px; }
+  .button-light i {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -khtml-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    margin: 0; }
+
+.button-gray {
+  background: #e5e5e5;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), to(rgba(242, 242, 242, 0.98)));
+  background: -webkit-linear-gradient(bottom, #e5e5e5 0%, rgba(242, 242, 242, 0.98) 100%);
+  background: -o-linear-gradient(bottom, #e5e5e5 0%, rgba(242, 242, 242, 0.98) 100%);
+  background: linear-gradient(0deg, #e5e5e5 0%, rgba(242, 242, 242, 0.98) 100%);
+  border: 1px solid #747A8A;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none; }
+  .button-gray:hover {
+    color: #000; }
+
+.button-large {
+  min-width: 260px; }
+
 /* Title */
 .dgt-title {
   font-size: 32px;
@@ -152,6 +194,12 @@ body {
 .no-spinners::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
+
+.alt-box {
+  margin-left: calc((100vw - 1110px) / (-2));
+  margin-right: calc((100vw - 1110px) / (-2));
+  padding-left: calc((100vw - 1110px) / (2));
+  padding-right: calc((100vw - 1110px) / (2)); }
 
 .form-group {
   margin-bottom: 22px; }
@@ -202,6 +250,54 @@ textarea.form-control {
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
   text-align: center; }
 
+.header-right {
+  right: 12px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -khtml-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .header-right .nav-link {
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+
+.coupon-info {
+  background-color: #F0E6FF;
+  border: 2px solid #914EF9;
+  border-radius: 4px;
+  padding: 0 16px 2px 10px;
+  margin-left: 7px; }
+  .coupon-info .icon {
+    margin-right: 8px; }
+  .coupon-info .coupon {
+    color: #914EF9;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: normal; }
+    .coupon-info .coupon .coupon-code {
+      font-size: 16px; }
+
+.dropdown-toggle:after {
+  border-top: 0.5em solid;
+  border-right: .5em solid transparent;
+  border-left: .5em solid transparent;
+  border-radius: 10px; }
+
 /* Logo */
 #logo {
   margin: 20px 0 16px; }
@@ -238,6 +334,16 @@ textarea.form-control {
     right: 24px;
     top: 10px;
     text-transform: capitalize; }
+  .nav-inner .price {
+    position: absolute;
+    left: 25px;
+    top: 10px; }
+    .nav-inner .price label {
+      margin-right: 10px; }
+    .nav-inner .price span {
+      height: 40px;
+      min-width: 105px;
+      font-size: 24px; }
 
 /* General */
 .dgt-form-button {
@@ -296,12 +402,186 @@ textarea.form-control {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 35px; }
 
 .payment {
   background-color: #F7F7F7;
   border: 1px solid rgba(116, 122, 138, 0.4);
-  border-radius: 5px; }
+  border-radius: 5px;
+  padding: 30px 0; }
+  .payment .title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #914EF9;
+    font-weight: bold;
+    margin: 13px 0 17px;
+    display: block; }
+
+.form-coupon {
+  margin: 36px 0 0; }
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .price label {
+    font-size: 16px;
+    margin-right: 18px; }
+  .price span {
+    min-width: 127px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #914EF9;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 4px; }
+    .price span.old {
+      background-color: #F7F7F7;
+      color: #000;
+      border: 1px solid rgba(116, 122, 138, 0.4);
+      text-decoration: line-through; }
+    .price span.white {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      border: 2px solid #fff; }
+  .price.medium {
+    font-size: 24px; }
+  .price.small {
+    font-size: 16px; }
+
+.payment-paypal h3 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 28px; }
+
+.payment-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 40px 0;
+  margin-top: 30px;
+  margin-bottom: 120px; }
+  .payment-button .dgt-button {
+    width: 360px;
+    height: 64px; }
+
+.payment-complete {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.2; }
+  .payment-complete h3 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 6px 0 40px;
+    text-transform: uppercase;
+    display: block; }
+
+.payment-tutorials h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 25px; }
+
+/* Wallet */
+.section-wallet .btn-group,
+.total-income .title {
+  border-bottom: 1px solid #914EF9; }
+
+.section-wallet {
+  margin-top: 40px; }
+  .section-wallet .btn-group {
+    width: 100%;
+    padding-bottom: 25px; }
+
+.btn-group button {
+  margin-right: 24px;
+  width: 140px;
+  height: 40px; }
+  .btn-group button:first-child, .btn-group button:last-child {
+    width: 40px; }
+
+.total-income .title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 11px 0 35px;
+  margin: 0; }
+
+.view-statement {
+  padding: 0 28px 0 15px;
+  max-height: 500px;
+  overflow-y: auto;
+  position: relative; }
+  .view-statement .item {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px; }
+    .view-statement .item > * {
+      -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+      -ms-flex-positive: 1;
+      -webkit-box-flex: 1;
+      flex-grow: 1;
+      max-width: 100%; }
+  .view-statement .title {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 37%;
+    flex: 0 0 37%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0; }
+  .view-statement .price {
+    margin-right: 15px; }
+  .view-statement .status {
+    text-align: center;
+    color: #FF0000; }
+
+.items .item {
+  min-height: 62px;
+  border-bottom: 1px solid #747A8A; }
+
+.items .total {
+  margin: 19px 0 16px; }
+  .items .total .item {
+    border: none;
+    min-height: 42px; }
+
+.statement-button .dgt-button {
+  margin: 60px 50px 0; }
+
+.total-info {
+  padding-left: 15px;
+  font-size: 16px; }
+
+.total-button .dgt-button {
+  width: 100%; }
 
 /**
  * Base Rules
@@ -331,10 +611,10 @@ h1 {
 a {
   color: #232323; }
   a:hover {
-    color: #E38354;
+    color: #914EF9;
     text-decoration: none; }
   a:focus {
-    color: #E38354;
+    color: #914EF9;
     text-decoration: none; }
 
 label {
@@ -356,10 +636,10 @@ ul {
   background-color: #914EF9 !important; }
 
 .color-blue {
-  color: #4584C5 !important; }
+  color: #26DA38 !important; }
 
 .bg-blue {
-  background-color: #4584C5 !important; }
+  background-color: #26DA38 !important; }
 
 .color-orange {
   color: #F79043 !important; }
@@ -418,6 +698,48 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
   height: 40px;
   font-size: 16px; }
+
+.button-light {
+  border: 1px solid #914EF9;
+  background-color: #F7F7F7;
+  font-size: 24px;
+  color: #914EF9;
+  border-radius: 32px; }
+  .button-light:after {
+    border: 1px solid #914EF9;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    content: "";
+    position: absolute;
+    border-radius: 32px; }
+  .button-light i {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -khtml-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    margin: 0; }
+
+.button-gray {
+  background: #e5e5e5;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e5e5e5), to(rgba(242, 242, 242, 0.98)));
+  background: -webkit-linear-gradient(bottom, #e5e5e5 0%, rgba(242, 242, 242, 0.98) 100%);
+  background: -o-linear-gradient(bottom, #e5e5e5 0%, rgba(242, 242, 242, 0.98) 100%);
+  background: linear-gradient(0deg, #e5e5e5 0%, rgba(242, 242, 242, 0.98) 100%);
+  border: 1px solid #747A8A;
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none; }
+  .button-gray:hover {
+    color: #000; }
+
+.button-large {
+  min-width: 260px; }
 
 /* Title */
 .dgt-title {

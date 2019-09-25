@@ -23,6 +23,12 @@
                         <div id="logo">
                             <a href="#"><img src="../assets/images/logoPassit.png" alt="PassIt" /></a>
                         </div>
+                        <!-- Language Switcher -->
+                        <div class="nav-item dropdown language show">
+                            <a href="#" id="navbarDropdownLanguageLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="nav-link dropdown-toggle">
+                                Language(EN)
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -52,7 +58,7 @@
                                 <div class="coupon-code">
                                     <label>If you received a Passit coupon code paste it here<br />
                                         and receive a one-time discount on your personal coupon code</label>
-                                    <form id="couponCode">
+                                    <form id="couponCode" class="form-coupon">
                                         <div class="form-group"><input class="form-control" type="text" name="coupon" value="Pas69cou" placeholder="Coupon code" /></div>
                                     </form>
                                     <!-- Payment -->
@@ -71,8 +77,8 @@
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <div class="payment-paypal">
-                                                <label class="color-accent">Payment with</label>
+                                            <div class="payment-paypal d-flex flex-column">
+                                                <h3 class="color-accent">Payment with</h3>
                                                 <a href="#"><img src="../assets/images/pp.jpg" /></a>
                                             </div>
                                         </div>

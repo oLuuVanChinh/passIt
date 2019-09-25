@@ -125,6 +125,45 @@ a {
     font-size: 16px;
 }
 
+.button-light{
+    border: 1px solid $accent;
+    background-color: #F7F7F7;
+    font-size: 24px;
+    color: $accent;
+    border-radius: 32px;
+    &:after{
+        border: 1px solid $accent;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        content: "";
+        position: absolute;
+        border-radius: 32px;
+    }
+    i{
+        position: absolute;
+        right: 28px;
+        top: 50%;
+        @include css3-compatible("transform", translateY(-50%));
+        margin: 0;
+    }
+}
+.button-gray{
+    background: rgb(229,229,229);
+    background: linear-gradient(0deg, rgba(229,229,229,1) 0%, rgba(242,242,242,0.98) 100%);
+    border: 1px solid #747A8A;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: none;
+    &:hover{
+        color: #000;
+    }
+}
+
+.button-large{
+    min-width: 260px;
+}
+
 /* Title */
 .dgt-title {
     font-size: $baseFontSize + 18;
