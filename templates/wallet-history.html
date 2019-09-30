@@ -13,6 +13,44 @@
     <link rel="stylesheet" href="../assets/stylesheets/css/styles.css">
 </head>
 <body>
+<!-- Modal Widthraw -->
+<div class="modal fade" id="widthrawModal" tabindex="-1" role="dialog" aria-labelledby="widthrawModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h5 class="modal-title" id="exampleModalLabel">How many do you want to widthraw</h5>
+                <div class="widthraw-content">
+                    <span class="title text-center"><span>Balance</span>$250</span>
+                    <form id="widthraw-form">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="value">
+                                    <label class="mb-2">Widthraw</label>
+                                    <div class="value-input d-flex justify-content-between">
+                                        <input type="text" value="123" name="widthraw-value">
+                                        <strong class="currency">$</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="value">
+                                    <label class="mb-2">Left</label>
+                                    <div class="value-input d-flex justify-content-between">
+                                        <input type="text" value="234" name="widthraw-left">
+                                        <strong class="currency">$</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widthraw-button text-center mt-5">
+                            <button type="submit" class="dgt-button button-gray button-large">Request Admin</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="dgt-wrapper">
     <div class="dgt-page">
         <!-- Header -->
@@ -75,7 +113,16 @@
                                 <span class="white">$700</span>
                             </div>
                             <h1>Wallet History</h1>
-                            <a class="dgt-button button-white" href="login.html"><i class="ion-android-person"></i><span>User12</span></a>
+                            <div class="menu-user">
+                                <a class="dgt-button button-white" href="login.html"><i
+                                        class="ion-android-person"></i><span>LOGIN</span></a>
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="#"><i class="ion-android-settings"></i>Settings</a></li>
+                                        <li><a href="#"><i class="ion-arrow-return-left"></i>Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,7 +228,7 @@
                                             </div>
                                         </div>
                                         <div class="total-button d-flex justify-content-end">
-                                            <a href="#" class="dgt-button">Widthraw</a>
+                                            <a href="#" class="dgt-button" data-toggle="modal" data-target="#widthrawModal">Widthraw</a>
                                         </div>
                                     </div>
                                 </div>

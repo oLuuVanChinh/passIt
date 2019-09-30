@@ -4,12 +4,23 @@
 @import "../common/variables";
 @import "../common/mixins";
 
-/* For screen minx width 767px */
+/* For screen min width 768px */
 @media screen and (min-width: 768px) {
+  .modal-dialog{
+    max-width: 750px;
+  }
 }
 
-/* For screen width from 1200px to 1366px */
+/* For screen min width 992px */
 @media screen and (min-width: 992px) {
+
+}
+
+/* For screen min width 1200px */
+@media screen and (min-width: 1200px) {
+  .modal-dialog {
+    margin: 252px auto;
+  }
 }
 
 @media screen and (max-width: 767px) {

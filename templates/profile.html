@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+    <title>PassIt</title>
+    <!-- Link style -->
+    <!-- General -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- For this page -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/stylesheets/css/styles.css">
+</head>
+<body>
+<div class="dgt-wrapper">
+    <div class="dgt-page">
+        <!-- Header -->
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="logo">
+                            <a href="#"><img src="../assets/images/logoPassit.png" alt="PassIt"/></a>
+                        </div>
+                        <!-- Header Right -->
+                        <div class="header-right">
+                            <!-- Language Switcher -->
+                            <div class="nav-item dropdown language show">
+                                <a href="#" id="navbarDropdownLanguageLink" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="true" class="nav-link dropdown-toggle">
+                                    Language(EN)
+                                </a>
+                            </div>
+                            <!-- Coupon Info -->
+                            <div class="coupon-info">
+                                <div class="d-flex align-items-center">
+                                    <span class="icon">
+                                        <svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1"
+                                             xmlns="http://www.w3.org/2000/svg"
+                                             xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <title>1441119164_checked_user</title>
+                                        <desc>Created with Sketch.</desc>
+                                        <g id="fusecoders.com" stroke="none" stroke-width="1" fill="none"
+                                           fill-rule="evenodd">
+                                            <g id="4_1" transform="translate(-1166.000000, -41.000000)">
+                                                <g id="coupon" transform="translate(1154.000000, 27.000000)">
+                                                    <g id="1441119164_checked_user"
+                                                       transform="translate(12.000000, 14.000000)">
+                                                        <path d="M18,11 L18,14 L2,14 L2,11 C3.1045695,11 4,10.1045695 4,9 C4,7.8954305 3.1045695,7 2,7 L2,4 L18,4 L18,7 C16.8954305,7 16,7.8954305 16,9 C16,10.1045695 16.8954305,11 18,11 Z"
+                                                              id="Path" fill="#914EF9"
+                                                              transform="translate(10.000000, 9.000000) rotate(-33.000000) translate(-10.000000, -9.000000) "></path>
+                                                        <text id="%"
+                                                              transform="translate(10.000000, 9.000000) rotate(-33.000000) translate(-10.000000, -9.000000) "
+                                                              font-family="Helvetica" font-size="9" font-weight="normal"
+                                                              fill="#FFFFFF">
+                                                            <tspan x="6" y="12">%</tspan>
+                                                        </text>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    </span>
+                                    <div class="coupon text-left">
+                                        <span class="d-block">Coupon code</span>
+                                        <span class="coupon-code">B394DU2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Header -->
+        <!-- Nav -->
+        <div id="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="nav-inner">
+                            <div class="price">
+                                <label>Balance:</label>
+                                <span class="white">$700</span>
+                            </div>
+                            <h1>Wallet History</h1>
+                            <div class="menu-user">
+                                <a class="dgt-button button-white" href="login.html"><i
+                                        class="ion-android-person"></i><span>LOGIN</span></a>
+                                <div class="sub-menu">
+                                    <ul>
+                                        <li><a href="#"><i class="ion-android-settings"></i>Settings</a></li>
+                                        <li><a href="#"><i class="ion-arrow-return-left"></i>Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Nav -->
+        <!-- Content -->
+        <div id="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section">
+                            <div class="section-profile">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-3">
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                             aria-orientation="vertical">
+                                            <a class="nav-link active" id="v-pills-info-tab" data-toggle="pill"
+                                               href="#v-pills-info" role="tab" aria-controls="v-pills-info"
+                                               aria-selected="true">Profile infomation</a>
+                                            <a class="nav-link" id="v-pills-payment-tab" data-toggle="pill"
+                                               href="#v-pills-payment" role="tab" aria-controls="v-pills-payment"
+                                               aria-selected="false">Payment Method</a>
+                                            <a class="nav-link" id="v-pills-term-tab" data-toggle="pill"
+                                               href="#v-pills-term" role="tab" aria-controls="v-pills-term"
+                                               aria-selected="false">Term of use</a>
+                                            <a class="nav-link" id="v-pills-about-tab" data-toggle="pill"
+                                               href="#v-pills-about" role="tab" aria-controls="v-pills-about"
+                                               aria-selected="false">About Us</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-info" role="tabpanel"
+                                                 aria-labelledby="v-pills-info-tab">
+                                                <div class="profile-head">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="profile-name">
+                                                            <strong class="name d-block text-medium">Edith Brewer</strong>
+                                                            <span class="position">Marketing</span>
+                                                        </div>
+                                                        <div class="profile-action">
+                                                            <a href="change-password.html"
+                                                               class="dgt-button button-alt button-small">Change
+                                                                Password</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="profile-info mt-4 pt-3">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="mb-0">
+                                                            <label>Date of birth</label>
+                                                            <strong>29 Jun 2019</strong>
+                                                        </p>
+                                                        <a href="#" class="link">Edit</a>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="mb-0">
+                                                            <label>Email</label>
+                                                            <strong>derick_larkin@orpha.ca</strong>
+                                                        </p>
+                                                        <a href="#" class="link">Edit</a>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="mb-0">
+                                                            <label>Phone number</label>
+                                                            <strong>130-490-3500</strong>
+                                                        </p>
+                                                        <a href="#" class="link">Edit</a>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <p class="mb-0">
+                                                            <label>Total income</label>
+                                                            <strong>$170.72</strong>
+                                                        </p>
+                                                        <a href="#" class="link">View</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-payment" role="tabpanel"
+                                                 aria-labelledby="v-pills-payment-tab">
+                                                <div class="payment-head border-bottom d-flex justify-content-between pb-4">
+                                                    <div class="payment-method">
+                                                        <div class="radio">
+                                                            <input type="radio" id="method-name" checked="checked"/>
+                                                            <label for="method-name">Paypal account (default)</label>
+                                                        </div>
+                                                        <strong class="acc-name">semi.pay***@paypal.com</strong>
+                                                    </div>
+                                                    <a href="#" class="link">Edit</a>
+                                                </div>
+                                                <div class="coupon-code d-flex align-items-center mt-4">
+                                                    <label class="mr-5">Coupon Code</label>
+                                                    <form id="couponCode" class="form-coupon mt-0">
+                                                        <div class="form-group mb-0 position-relative">
+                                                            <input class="form-control bg-white" type="text" name="coupon" value="Pas69cou" placeholder="Coupon code"/>
+                                                            <a class="form-addon color-accent copy-code" href="#" id="copy-code">Copy</a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-term" role="tabpanel"
+                                                 aria-labelledby="v-pills-term-tab">
+                                                <div class="section-term">
+                                                    <strong>A Guide To Mri Scans</strong>
+                                                    <p>You have just invested in a new vehicle, the one of your dreams,
+                                                        and you take it on a trip across Canada. You only put gas in it
+                                                        and drive sightseeing and following your nose. Filters and oil
+                                                        changes are ignored. The car breaks down in the middle of that
+                                                        long stretch of road between Manitoba and Alberta. It takes two
+                                                        days to get you up and running and the bill is more than a
+                                                        year’s worth of oil changes and regular maintenance. Just like
+                                                        the family vehicle, your business computer systems require
+                                                        regular maintenance to ensure optimum system performance and
+                                                        uptime to prevent productivity losses. What really happens
+                                                        during system failure?
+
+                                                        The user is unable to do their job using the productivity tools
+                                                        you have provided Potentially this may affect two or more
+                                                        employees if their activities are linked The system failure may
+                                                        be enterprise wide, causing everyone down time The failure may
+                                                        happen at the “worst possible time”. Closing date for an RFP
+                                                        submission, payroll, month-end or year-end or ???? There may be
+                                                        total data loss
+
+                                                        The people affected must contact the support person and explain
+                                                        the issue. Hopefully, the service provider is immediately
+                                                        available and they must only wait while the technician travels
+                                                        to the site. Once on site, the technician must diagnose the
+                                                        problem and implement the repair. Will parts be needed? Will
+                                                        they need to be ordered? Will a temporary loaner be required?
+                                                        Will software need to be reloaded? Will software support need to
+                                                        be contacted?
+
+                                                        All of these will add to the time to resolve the problem. During
+                                                        this time one or more of your staff will be unable to do their
+                                                        job using the tools provided. How much money is lost in employee
+                                                        downtime, lost sales opportunities, damaged client information,
+                                                        investments to rebuild data, and potentially no available
+                                                        back-up? Emergency callout rates for the service provider may be
+                                                        in effect. Express shipping costs, Software support costs, and
+                                                        data recovery costs may apply. You are looking at an expensive
+                                                        solution! What is the cost of a pro-active repair?
+
+                                                        With an affordable investment, you will find a program of
+                                                        regularly scheduled preventive maintenance to be most valuable
+                                                        and the best return on your dollar. This type of activity will
+                                                        avoid down time and loss of production from employees. Your
+                                                        investment would pay for itself by eliminating a major system
+                                                        failure or data loss. Loss of service to user scheduled for a
+                                                        time of minimum requirements. User can pre-plan alternate
+                                                        activity Cost of labour at reduced prescheduled rate Cost of
+                                                        parts without emergency shipping costs Find a solid company that
+                                                        will provide a program of regularly scheduled maintenance visits
+                                                        who will become familiar with your computer and network system.
+                                                        That technician should visit the site and document all computer
+                                                        and networking hardware, peripherals and all operating systems,
+                                                        productivity and application software. This will give you both a
+                                                        solid understanding of the current network environment and will
+                                                        provide a starting point for a preventive maintenance program.
+                                                        This site visit will also enable you to analyze and improve
+                                                        efficiencies within your system. There are many other advantages
+                                                        in this type of process that should include: Reduces the
+                                                        incidence of emergency and service calls. IT service able to be
+                                                        budgeted for more accurately. Proactive preventive maintenance
+                                                        solves issues before they become problems. Reduces IT cost per
+                                                        user by improving system uptime and productivity. Discounted
+                                                        hourly rate based on a minimum site visit. Timely accounting for
+                                                        all work performed. Dependable and reliable tools to operate
+                                                        your business. When you invest in a tool to get your work done,
+                                                        you would not think of not maintaining it and your network
+                                                        system is no different; it is a critical tool that needs to be
+                                                        maintained. Plan for it, budget for it and it will give you a
+                                                        solid system to improve your bottom line.</p>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-about" role="tabpanel"
+                                                 aria-labelledby="v-pills-about-tab">
+                                                <div class="section-map">
+                                                    <script type="text/javascript"
+                                                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_ZkhdA_9Jt3XzX7ZBwXdQRONfKA3Okbw"></script>
+                                                    <script type="text/javascript">
+                                                        // When the window has finished loading create our google map below
+                                                        google.maps.event.addDomListener(window, 'load', init);
+
+                                                        function init() {
+
+                                                            var map_styles = {};
+                                                            map_styles.light = [{
+                                                                "featureType": "water",
+                                                                "elementType": "geometry",
+                                                                "stylers": [{"color": "#e9e9e9"}, {"lightness": 17}]
+                                                            }, {
+                                                                "featureType": "landscape",
+                                                                "elementType": "geometry",
+                                                                "stylers": [{"color": "#f5f5f5"}, {"lightness": 20}]
+                                                            }, {
+                                                                "featureType": "road.highway",
+                                                                "elementType": "geometry.fill",
+                                                                "stylers": [{"color": "#ffffff"}, {"lightness": 17}]
+                                                            }, {
+                                                                "featureType": "road.highway",
+                                                                "elementType": "geometry.stroke",
+                                                                "stylers": [{"color": "#ffffff"}, {"lightness": 29}, {"weight": 0.2}]
+                                                            }, {
+                                                                "featureType": "road.arterial",
+                                                                "elementType": "geometry",
+                                                                "stylers": [{"color": "#ffffff"}, {"lightness": 18}]
+                                                            }, {
+                                                                "featureType": "road.local",
+                                                                "elementType": "geometry",
+                                                                "stylers": [{"color": "#ffffff"}, {"lightness": 16}]
+                                                            }, {
+                                                                "featureType": "poi",
+                                                                "elementType": "geometry",
+                                                                "stylers": [{"color": "#f5f5f5"}, {"lightness": 21}]
+                                                            }, {
+                                                                "featureType": "poi.park",
+                                                                "elementType": "geometry",
+                                                                "stylers": [{"color": "#dedede"}, {"lightness": 21}]
+                                                            }, {
+                                                                "elementType": "labels.text.stroke",
+                                                                "stylers": [{"visibility": "on"}, {"color": "#ffffff"}, {"lightness": 16}]
+                                                            }, {
+                                                                "elementType": "labels.text.fill",
+                                                                "stylers": [{"saturation": 36}, {"color": "#333333"}, {"lightness": 40}]
+                                                            }, {
+                                                                "elementType": "labels.icon",
+                                                                "stylers": [{"visibility": "off"}]
+                                                            }, {
+                                                                "featureType": "transit",
+                                                                "elementType": "geometry",
+                                                                "stylers": [{"color": "#f2f2f2"}, {"lightness": 19}]
+                                                            }, {
+                                                                "featureType": "administrative",
+                                                                "elementType": "geometry.fill",
+                                                                "stylers": [{"color": "#fefefe"}, {"lightness": 20}]
+                                                            }, {
+                                                                "featureType": "administrative",
+                                                                "elementType": "geometry.stroke",
+                                                                "stylers": [{"color": "#fefefe"}, {"lightness": 17}, {"weight": 1.2}]
+                                                            }];
+
+                                                            // Basic options for a simple Google Map
+                                                            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                                                            var mapOptions = {
+                                                                // How zoomed in you want the map to start at (always required)
+                                                                zoom: 10,
+                                                                scrollwheel: false,
+                                                                draggable: true,
+                                                                // The latitude and longitude to center the map (always required)
+                                                                center: new google.maps.LatLng('42.247879', '-75.828682'), // New York
+
+                                                                // How you would like to style the map.
+                                                                // This is where you would paste any style found on Snazzy Maps.
+                                                                styles: map_styles.light,
+                                                            };
+
+                                                            // Get the HTML DOM element that will contain your map
+                                                            // We are using a div with id="map" seen below in the <body>
+                                                            var mapElement = document.getElementById('map');
+
+                                                            // Create the Google Map using our element and options defined above
+                                                            var map = new google.maps.Map(mapElement, mapOptions);
+
+                                                            // Let's also add a marker while we're at it
+                                                            var marker = new google.maps.Marker({
+                                                                position: new google.maps.LatLng('42.247879', '-75.828682'),
+                                                                map: map,
+                                                                draggable: true,
+                                                                animation: google.maps.Animation.DROP,
+                                                                title: 'Snazzy!'
+                                                            });
+                                                            marker.addListener('click', toggleBounce);
+                                                        }
+
+                                                        function toggleBounce() {
+                                                            if (marker.getAnimation() !== null) {
+                                                                marker.setAnimation(null);
+                                                            } else {
+                                                                marker.setAnimation(google.maps.Animation.BOUNCE);
+                                                            }
+                                                        }
+                                                    </script>
+                                                    <div class="dgt-map-wrap">
+                                                        <div class="dgt-map-area" id="map"
+                                                             style="width: 100%; height: 210px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12 col-md-4">
+                                                        <div class="icon-box">
+                                                            <div class="icon">
+                                                                <i class="ion-android-pin"></i>
+                                                            </div>
+                                                            <div class="icon-text">
+                                                                <span class="d-block">Head Office</span>
+                                                                <strong>636 Beier Fords Suite 189 NY</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-4">
+                                                        <div class="icon-box">
+                                                            <div class="icon">
+                                                                <i class="ion-android-pin"></i>
+                                                            </div>
+                                                            <div class="icon-text">
+                                                                <span class="d-block">Branch</span>
+                                                                <strong>77 Greenholt Lake Singapore</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-md-4">
+                                                        <div class="icon-box">
+                                                            <div class="icon">
+                                                                <i class="ion-ios-telephone"></i>
+                                                            </div>
+                                                            <div class="icon-text">
+                                                                <span class="d-block">Phone number</span>
+                                                                <strong>417-133-2366</strong>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Content -->
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="../assets/javascripts/function.js"></script>
+</html>
