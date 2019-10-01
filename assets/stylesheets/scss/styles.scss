@@ -25,10 +25,10 @@ body {
 }
 
 .alt-box {
-  margin-left: calc((100vw - 1110px) / (-2));
-  margin-right: calc((100vw - 1110px) / (-2));
-  padding-left: calc((100vw - 1110px) / (2));
-  padding-right: calc((100vw - 1110px) / (2));
+  margin-left: calc((100vw - 15px) / (-2));
+  margin-right: calc((100vw - 15px) / (-2));
+  padding-left: calc((100vw - 15px) / (2));
+  padding-right: calc((100vw - 15px) / (2));
 }
 
 .form-group {
@@ -46,6 +46,13 @@ body {
     font-size: 16px;
     font-weight: bold;
     margin: 0 0 10px 0;
+  }
+
+  .form-addon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
@@ -73,12 +80,6 @@ body {
 
   &:-moz-placeholder { /* Firefox 18- */
     color: rgba(0, 0, 0, 0.3);
-  }
-  .form-addon{
-    position: absolute;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
   }
 }
 
@@ -172,7 +173,7 @@ textarea.form-control {
   }
 }
 
-.radio{
+.radio {
   [type="radio"]:not(:checked) + label:before,
   [type="radio"]:checked + label:before {
     width: 20px;
@@ -183,13 +184,14 @@ textarea.form-control {
     top: 50%;
     @include css3-compatible("transform", translateY(-50%));
   }
+
   [type="radio"]:not(:checked) + label:after,
   [type="radio"]:checked + label:after {
     content: '';
     width: 12px;
     height: 12px;
-    background: rgb(145,78,249);
-    background: linear-gradient(0deg, rgba(145,78,249,1) 0%, rgba(230,214,255,1) 100%);
+    background: rgb(145, 78, 249);
+    background: linear-gradient(0deg, rgba(145, 78, 249, 1) 0%, rgba(230, 214, 255, 1) 100%);
     border-radius: 50%;
     top: 50%;
     @include css3-compatible("transform", translateY(-50%));
@@ -197,7 +199,7 @@ textarea.form-control {
 }
 
 #header {
-  height: 130px;
+  min-height: 130px;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
@@ -367,9 +369,8 @@ textarea.form-control {
 .banner {
   background: url("../../images/img-banner.jpg") no-repeat 0 0;
   background-size: cover;
-  min-height: 620px;
   text-align: center;
-  padding: 68px 0 0;
+  padding: 60px 0 30px;
   color: #fff;
 
   h4 {
@@ -380,6 +381,10 @@ textarea.form-control {
   h3 {
     font-size: 28px;
     margin: 15px 0 0;
+  }
+  iframe{
+    max-width: 100%;
+    max-height: 300px;
   }
 }
 
@@ -409,7 +414,7 @@ textarea.form-control {
 
 /* Coupon */
 .section-dashboard {
-  margin: 100px 0 0;
+  margin: 40px 0 0;
 }
 
 .coupon-code {
@@ -726,8 +731,9 @@ textarea.form-control {
   border-radius: 5px;
   border: 1px solid rgba(116, 122, 138, 0.4);
   min-height: 575px;
+  max-height: 575px;
   background-color: #F7F7F7;
-  padding: 25px 65px;
+  padding: 25px 15px;
 }
 
 .profile-info {
@@ -742,13 +748,41 @@ textarea.form-control {
   }
 }
 
-.payment-method{
-  .acc-name{
+.payment-method {
+  .acc-name {
     padding: 5px 0 0 1.95em;
     display: block;
   }
 }
-.payment-head{
+
+.section-term {
+  overflow-y: auto;
+  max-height: 520px;
+  position: relative;
+}
+
+.section-map {
+  border: 1px solid rgba(116, 122, 138, 0.4);
+}
+
+.icon-box {
+  display: flex;
+
+  .icon {
+    i {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #E6D6FF;
+      border-radius: 50%;
+      background-color: $whiteColor;
+      color: $accent;
+      font-size: 20px;
+      margin-right: 16px;
+    }
+  }
 }
 
 @import "responsive";

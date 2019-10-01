@@ -4,16 +4,51 @@
 @import "../common/variables";
 @import "../common/mixins";
 
+/* For screen min width 567px */
+@media screen and (min-width: 567px) {
+  .alt-box {
+    margin-left: calc((100vw - 510px) / (-2));
+    margin-right: calc((100vw - 510px) / (-2));
+    padding-left: calc((100vw - 510px) / (2));
+    padding-right: calc((100vw - 510px) / (2));
+  }
+}
+
 /* For screen min width 768px */
 @media screen and (min-width: 768px) {
-  .modal-dialog{
+  .modal-dialog {
     max-width: 750px;
+  }
+  .section-dashboard {
+    margin: 100px 0 0;
+  }
+  .alt-box {
+    margin-left: calc((100vw - 690px) / (-2));
+    margin-right: calc((100vw - 690px) / (-2));
+    padding-left: calc((100vw - 690px) / (2));
+    padding-right: calc((100vw - 690px) / (2));
   }
 }
 
 /* For screen min width 992px */
 @media screen and (min-width: 992px) {
+  .banner {
+    min-height: 620px;
+    padding: 68px 0 0;
 
+    iframe {
+      max-height: inherit;
+    }
+  }
+  .alt-box {
+    margin-left: calc((100vw - 930px) / (-2));
+    margin-right: calc((100vw - 930px) / (-2));
+    padding-left: calc((100vw - 930px) / (2));
+    padding-right: calc((100vw - 930px) / (2));
+  }
+  .tab-content{
+    padding: 25px 65px;
+  }
 }
 
 /* For screen min width 1200px */
@@ -21,7 +56,87 @@
   .modal-dialog {
     margin: 252px auto;
   }
+  .alt-box {
+    margin-left: calc((100vw - 1110px) / (-2));
+    margin-right: calc((100vw - 1110px) / (-2));
+    padding-left: calc((100vw - 1110px) / (2));
+    padding-right: calc((100vw - 1110px) / (2));
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .xs-pr-5 {
+    padding-right: 80px;
+  }
+  .menu-user {
+    > a {
+      > span {
+        display: none;
+      }
+    }
+  }
+  .nav-inner {
+    h1 {
+      font-size: 18px;
+    }
+
+    .menu-user {
+      right: 10px;
+
+      .dgt-button {
+        i {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .price {
+      left: 10px;
+
+      span {
+        min-width: 60px;
+        font-size: 18px;
+      }
+    }
+  }
+  .button-arrow {
+    font-size: 24px;
+    height: 50px;
+    min-width: 160px;
+
+    &:after {
+      bottom: 0;
+    }
+  }
+  .coupon-code {
+    .form-control {
+      max-width: 100%;
+    }
+  }
+  .payment {
+    .title {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+  }
+  .payment-button {
+    .dgt-button{
+      width: 300px;
+    }
+  }
+  .header-right {
+    position: relative;
+    @include css3-compatible("transform", none);
+    top: inherit;
+    right: inherit;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .profile-info {
+    label{
+      min-width: inherit;
+      margin-right: 15px;
+    }
+  }
 }
