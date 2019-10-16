@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+    <title>PassIt</title>
+    <!-- Link style -->
+    <!-- General -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- For this page -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/css/styles.css">
+</head>
+<body>
+<div class="dgt-wrapper">
+    <div class="dgt-page admin-page">
+        <!-- Header -->
+        <div id="header" class="d-flex align-items-stretch">
+            <div class="d-flex flex-grow-1 justify-content-between align-items-center">
+                <div id="logo">
+                    <a href="#"><img src="../../assets/images/logoPassit.png" alt="PassIt"/></a>
+                </div>
+                <!-- Header Right -->
+                <div class="header-user d-flex align-items-center">
+                    <div class="menu-user">
+                        <a class="dgt-button" href="login.html"><i
+                                class="ion-android-person"></i><span>LOGIN</span></a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#"><i class="ion-android-settings"></i>Settings</a></li>
+                                <li><a href="#"><i class="ion-arrow-return-left"></i>Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Language Switcher -->
+                    <div class="nav-item dropdown language show">
+                        <a href="#" id="navbarDropdownLanguageLink" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="true" class="nav-link dropdown-toggle">
+                            Language(EN)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Header -->
+        <!-- Content -->
+        <div id="content">
+            <div class="d-flex">
+                <div class="sidebar">
+                    <div class="admin-statement">
+                        <div class="statement-item">
+                            <div class="d-flex justify-content-between align-items-end">
+                                <label>Balance:</label>
+                                <strong class="total">$ 5492</strong>
+                            </div>
+                        </div>
+                        <div class="statement-item">
+                            <div class="d-flex justify-content-between align-items-end">
+                                <label>Withdraw:</label>
+                                <strong>- $ 93961</strong>
+                            </div>
+                        </div>
+                        <div class="statement-item">
+                            <div class="d-flex justify-content-between align-items-end">
+                                <label>Members:</label>
+                                <strong>52526</strong>
+                            </div>
+                        </div>
+                        <div class="statement-item">
+                            <div class="d-flex justify-content-between align-items-end">
+                                <label>Paid:</label>
+                                <strong>30659</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin-menu">
+                        <ul>
+                            <li><a href="statistic-infomation.html">Statistic Info</a></li>
+                            <li class="active"><a href="config-cost.html">Config Cost</a></li>
+                            <li><a href="member.html">Members</a></li>
+                            <li><a href="withdraw-request.html">Withdraw request<span class="number">12</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex-grow-1 content-primary">
+                    <div class="content-inner">
+                        <h3 class="title text-uppercase">Config</h3>
+                        <div class="bg-shadow form-wrap">
+                            <form class="config-cost-form pb-5">
+                                <div class="form-head">
+                                    <h4 class="title">Cost</h4>
+                                </div>
+                                <div class="form-content">
+                                    <div class="row large-gutters">
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig1">Cost with Coupon</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-cash"></i></div>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="cost-with-coupon" id="inputConfig1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig2">Cost without Coupon</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-cash"></i></div>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="cost-without-coupon" id="inputConfig2">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig3">Commission</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-cash"></i></div>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="commission" id="inputConfig3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig4">Min of withdraw</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-cash"></i></div>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="min-withdraw" id="inputConfig4">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-head">
+                                    <h4 class="title">Config Infomation</h4>
+                                </div>
+                                <div class="form-content">
+                                    <div class="row large-gutters">
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig5">Homepage Video</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-link"></i></div>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="home-video" id="inputConfig5">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig6">Tutorial Video</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-cash"></i></div>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="tut-video" id="inputConfig6">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
+                                                <label for="inputConfig7">Term of use</label>
+                                                <div class="input-group mb-2">
+                                                    <textarea class="form-control" name="term-of-use" id="inputConfig7"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-head">
+                                    <h4 class="title">Contact infomation</h4>
+                                </div>
+                                <div class="form-content">
+                                    <div class="row large-gutters">
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig8">Head Office</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-android-pin"></i></div>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="office" id="inputConfig8">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig9">Branch</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-android-pin"></i></div>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="branch" id="inputConfig9">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig10">Email Support</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-android-mail"></i></div>
+                                                    </div>
+                                                    <input type="email" class="form-control" name="email" id="inputConfig10">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig11">Phone Number</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-ios-telephone"></i></div>
+                                                    </div>
+                                                    <input type="tel" class="form-control" name="phone" id="inputConfig11">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig12">Phone Number</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-ios-telephone"></i></div>
+                                                    </div>
+                                                    <input type="tel" class="form-control" name="phone" id="inputConfig12">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig13">Hotline</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-ios-telephone"></i></div>
+                                                    </div>
+                                                    <input type="tel" class="form-control" name="hotline" id="inputConfig13">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-content">
+                                    <div class="row large-gutters">
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig14">Gmap Latitude</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-android-globe"></i></div>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="latitude" id="inputConfig14">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-group">
+                                                <label for="inputConfig15">Gmap Longtitude</label>
+                                                <div class="input-group mb-2">
+                                                    <div class="input-group-prepend">
+                                                        <div class="input-group-text"><i class="ion-android-globe"></i></div>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="longtitude" id="inputConfig15">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dgt-form-button d-flex justify-content-center">
+                                    <button type="submit" class="dgt-button">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Content -->
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="../assets/javascripts/function.js"></script>
+</html>

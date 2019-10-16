@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+    <title>PassIt</title>
+    <!-- Link style -->
+    <!-- General -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- For this page -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="../../assets/stylesheets/css/styles.css">
+</head>
+<body>
+<!-- Modal Member -->
+<div class="modal fade modal-custom admin-page" id="modalMember" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <span aria-hidden="true" data-dismiss="modal"><i class="ion-close-circled"></i></span>
+            <div class="modal-body">
+                <div class="bg-shadow static-wrap">
+                    <div class="d-flex">
+                        <div class="logo avatar">
+                            <a href="#"><img src="../../assets/images/img-banner.jpg" alt="PassIt"/></a>
+                        </div>
+                        <div class="static-info flex-grow-1">
+                            <div class="static-item">
+                                <div class="d-flex">
+                                    <div class="static-number">
+                                        <label><span>Name</span></label>
+                                        <strong class="d-block color-accent text-medium">Ronald Garner</strong>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><span>User ID</span></label>
+                                        <strong class="d-block color-black">kenny.murray@jodie.ca</strong>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><span>Paypal ID</span></label>
+                                        <strong class="d-block color-black">kenny.murray@jodie.ca</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="static-item">
+                                <div class="d-flex">
+                                    <div class="static-number">
+                                        <label><strong>Wallet</strong></label>
+                                        <span class="number d-block">$822</span>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><strong>Paid</strong></label>
+                                        <span class="number d-block">$67</span>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><strong>Invite</strong></label>
+                                        <span class="number d-block">23</span>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><strong>Withdrawn</strong></label>
+                                        <span class="number d-block">- $497</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-shadow static-table mt-4">
+                    <div class="d-flex static-head justify-content-between align-items-center">
+                        <h3 class="title">Statistic current money of system</h3>
+                        <form class="form-search">
+                            <div class="d-flex">
+                                <button type="submit"><i class="ion-android-search"></i></button>
+                                <input type="text" name="value" placeholder="Search"/>
+                            </div>
+                        </form>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Transaction ID <a href="#" class="table-sort"><i
+                                    class="ion-android-arrow-dropdown"></i></a></th>
+                            <th scope="col">Date <a href="#" class="table-sort"><i
+                                    class="ion-android-arrow-dropdown"></i></a></th>
+                            <th scope="col">Transaction <a href="#" class="table-sort"><i
+                                    class="ion-android-arrow-dropdown"></i></a></th>
+                            <th scope="col">Status <a href="#" class="table-sort"><i
+                                    class="ion-android-arrow-dropdown"></i></a></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td scope="row">1.</td>
+                            <td><strong>73940_payment</strong></td>
+                            <td>25 May 2019</td>
+                            <td><strong class="color-accent">+ 234$</strong></td>
+                            <td class="color-red">Pending</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">2.</td>
+                            <td><strong>73940_payment</strong></td>
+                            <td>25 May 2019</td>
+                            <td><strong>- 86</strong></td>
+                            <td class="color-blue">Done</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">3.</td>
+                            <td><strong>73940_payment</strong></td>
+                            <td>25 May 2019</td>
+                            <td><strong>- 95</strong></td>
+                            <td class="color-yellow">Inprogress</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">4.</td>
+                            <td><strong>73940_payment</strong></td>
+                            <td>25 May 2019</td>
+                            <td><strong class="color-accent">+ 8</strong></td>
+                            <td class="color-blue">Done</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">5.</td>
+                            <td><strong>73940_payment</strong></td>
+                            <td>25 May 2019</td>
+                            <td><strong class="color-accent">+ 234$</strong></td>
+                            <td class="color-red">Pending</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">6.</td>
+                            <td><strong>73940_payment</strong></td>
+                            <td>25 May 2019</td>
+                            <td><strong class="color-accent">+ 234$</strong></td>
+                            <td class="color-red">Pending</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">7.</td>
+                            <td><strong>73940_payment</strong></td>
+                            <td>25 May 2019</td>
+                            <td><strong class="color-accent">+ 234$</strong></td>
+                            <td class="color-red">Pending</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Member 2 -->
+<div class="modal fade modal-custom admin-page" id="modalMember2" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <span aria-hidden="true" data-dismiss="modal"><i class="ion-close-circled"></i></span>
+            <div class="modal-body">
+                <div class="bg-shadow static-wrap">
+                    <div class="d-flex">
+                        <div class="logo avatar">
+                            <a href="#"><img src="../../assets/images/img-banner.jpg" alt="PassIt"/></a>
+                        </div>
+                        <div class="static-info flex-grow-1">
+                            <div class="static-item">
+                                <div class="d-flex">
+                                    <div class="static-number">
+                                        <label><span>Name</span></label>
+                                        <strong class="d-block color-accent text-medium">Ronald Garner</strong>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><span>User ID</span></label>
+                                        <strong class="d-block color-black">kenny.murray@jodie.ca</strong>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><span>Paypal ID</span></label>
+                                        <strong class="d-block color-black">kenny.murray@jodie.ca</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="static-item">
+                                <div class="d-flex">
+                                    <div class="static-number">
+                                        <label><strong>Wallet</strong></label>
+                                        <span class="number d-block">$822</span>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><strong>Paid</strong></label>
+                                        <span class="number d-block">$67</span>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><strong>Invite</strong></label>
+                                        <span class="number d-block">23</span>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><strong>Withdrawn</strong></label>
+                                        <span class="number d-block">- $497</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="static-item pb-4">
+                                <div class="d-flex">
+                                    <div class="static-number">
+                                        <label><span>Commission ID</span></label>
+                                        <strong class="d-block color-black text-medium">342423</strong>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><span>Date</span></label>
+                                        <span class="d-block color-black">17 Apr 2019</span>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><span>Commission</span></label>
+                                        <strong class="d-block color-accent text-medium">$2</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <a href="#" class="dgt-button">Back</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Member 3 -->
+<div class="modal fade modal-custom admin-page" id="modalMember3" tabindex="-1" role="dialog"
+     aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <span aria-hidden="true" data-dismiss="modal"><i class="ion-close-circled"></i></span>
+            <div class="modal-body">
+                <div class="bg-shadow static-wrap">
+                    <div class="d-flex">
+                        <div class="logo avatar">
+                            <a href="#"><img src="../../assets/images/img-banner.jpg" alt="PassIt"/></a>
+                        </div>
+                        <div class="static-info flex-grow-1">
+                            <div class="static-item">
+                                <div class="d-flex">
+                                    <div class="static-number">
+                                        <label><span>Name</span></label>
+                                        <strong class="d-block color-accent text-medium">Ronald Garner</strong>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><span>User ID</span></label>
+                                        <strong class="d-block color-black">kenny.murray@jodie.ca</strong>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><span>Paypal ID</span></label>
+                                        <strong class="d-block color-black">kenny.murray@jodie.ca</strong>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="static-item">
+                                <div class="d-flex">
+                                    <div class="static-number">
+                                        <label><strong>Wallet</strong></label>
+                                        <span class="number d-block">$822</span>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><strong>Paid</strong></label>
+                                        <span class="number d-block">$67</span>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><strong>Invite</strong></label>
+                                        <span class="number d-block">23</span>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><strong>Withdrawn</strong></label>
+                                        <span class="number d-block">- $497</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="static-item pb-4">
+                                <div class="d-flex">
+                                    <div class="static-number">
+                                        <label><span>Withdraw ID</span></label>
+                                        <strong class="d-block color-black text-medium">342423_withdraw</strong>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><span>Date request</span></label>
+                                        <span class="d-block color-black">17 Apr 2019</span>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><span>Transaction</span></label>
+                                        <strong class="d-block color-accent text-medium">$2</strong>
+                                    </div>
+                                    <div class="static-number">
+                                        <label><span>Status</span></label>
+                                        <strong class="d-block color-black text-medium">Pending</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <a href="#" class="dgt-button">Save</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dgt-wrapper">
+    <div class="dgt-page admin-page">
+        <!-- Header -->
+        <div id="header" class="d-flex align-items-stretch">
+            <div class="d-flex flex-grow-1 justify-content-between align-items-center">
+                <div id="logo">
+                    <a href="#"><img src="../../assets/images/logoPassit.png" alt="PassIt"/></a>
+                </div>
+                <!-- Header Right -->
+                <div class="header-user d-flex align-items-center">
+                    <div class="menu-user">
+                        <a class="dgt-button" href="login.html"><i
+                                class="ion-android-person"></i><span>LOGIN</span></a>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#"><i class="ion-android-settings"></i>Settings</a></li>
+                                <li><a href="#"><i class="ion-arrow-return-left"></i>Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Language Switcher -->
+                    <div class="nav-item dropdown language show">
+                        <a href="#" id="navbarDropdownLanguageLink" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="true" class="nav-link dropdown-toggle">
+                            Language(EN)
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Header -->
+        <!-- Content -->
+        <div id="content">
+            <div class="d-flex">
+                <div class="sidebar">
+                    <div class="admin-statement">
+                        <div class="statement-item">
+                            <div class="d-flex justify-content-between align-items-end">
+                                <label>Balance:</label>
+                                <strong class="total">$ 5492</strong>
+                            </div>
+                        </div>
+                        <div class="statement-item">
+                            <div class="d-flex justify-content-between align-items-end">
+                                <label>Withdraw:</label>
+                                <strong>- $ 93961</strong>
+                            </div>
+                        </div>
+                        <div class="statement-item">
+                            <div class="d-flex justify-content-between align-items-end">
+                                <label>Members:</label>
+                                <strong>52526</strong>
+                            </div>
+                        </div>
+                        <div class="statement-item">
+                            <div class="d-flex justify-content-between align-items-end">
+                                <label>Paid:</label>
+                                <strong>30659</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin-menu">
+                        <ul>
+                            <li><a href="statistic-infomation.html">Statistic Info</a></li>
+                            <li><a href="config-cost.html">Config Cost</a></li>
+                            <li class="active"><a href="member.html">Members</a></li>
+                            <li><a href="withdraw-request.html">Withdraw request<span class="number">12</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex-grow-1 content-primary">
+                    <div class="content-inner">
+                        <h3 class="title text-uppercase">Member</h3>
+                        <div class="bg-shadow static-wrap">
+                            <div class="d-flex">
+                                <div class="logo">
+                                    <a href="#"><img src="../../assets/images/logoPassit.png" alt="PassIt"/></a>
+                                </div>
+                                <div class="static-info flex-grow-1">
+                                    <div class="static-item">
+                                        <div class="d-flex">
+                                            <div class="static-number">
+                                                <label><strong>Number User</strong></label>
+                                                <span class="number d-block">715.42</span>
+                                            </div>
+                                            <div class="static-number">
+                                                <label><strong>New User This month</strong></label>
+                                                <span class="number d-block">715.42</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="static-item">
+                                        <div class="d-flex">
+                                            <div class="static-number">
+                                                <label><strong>Statistic Payment</strong></label>
+                                                <span class="number d-block">715.42</span>
+                                            </div>
+                                            <div class="static-number">
+                                                <label><strong>Coupon Code</strong></label>
+                                                <span class="number d-block">715.42</span>
+                                            </div>
+                                            <div class="static-number">
+                                                <label><strong>Regular Payment</strong></label>
+                                                <span class="number d-block">715.42</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-shadow static-table mt-4">
+                            <div class="d-flex static-head justify-content-between align-items-center">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="with-coupon-tab" data-toggle="tab"
+                                           href="#with-coupon" role="tab" aria-controls="with-coupon"
+                                           aria-selected="true">Payment with Coupnon Code</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="without-coupon-tab" data-toggle="tab"
+                                           href="#without-coupon" role="tab" aria-controls="without-coupon"
+                                           aria-selected="false">Payment without Coupnon Code</a>
+                                    </li>
+                                </ul>
+                                <form class="form-search">
+                                    <div class="d-flex">
+                                        <button type="submit"><i class="ion-android-search"></i></button>
+                                        <input type="text" name="value" placeholder="Search"/>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="with-coupon" role="tabpanel"
+                                     aria-labelledby="with-coupon-tab">
+                                    <table class="table table-bordered">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Username <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></th>
+                                            <th scope="col">User ID <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></th>
+                                            <th scope="col">Reg date <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></th>
+                                            <th scope="col">Current Balance <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></th>
+                                            <th scope="col">User Invite <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></th>
+                                            <th scope="col">Action <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td scope="row">1.</td>
+                                            <td><strong data-toggle="modal" data-target="#modalMember">Sara
+                                                Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Banned <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2.</td>
+                                            <td><strong data-toggle="modal" data-target="#modalMember2">Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Approved <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3.</td>
+                                            <td><strong data-toggle="modal" data-target="#modalMember3">Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Deactive <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">4.</td>
+                                            <td><strong>Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Banned</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">5.</td>
+                                            <td><strong>Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Banned</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">6.</td>
+                                            <td><strong>Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Banned</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">7.</td>
+                                            <td><strong>Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Banned</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">8.</td>
+                                            <td><strong>Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Banned</strong></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="tab-pane fade" id="without-coupon" role="tabpanel"
+                                     aria-labelledby="without-coupon-tab">
+                                    <table class="table table-bordered">
+                                        <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">No.</th>
+                                            <th scope="col">Username <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></th>
+                                            <th scope="col">User ID <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></th>
+                                            <th scope="col">Reg date <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></th>
+                                            <th scope="col">Current Balance <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></th>
+                                            <th scope="col">User Invite <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></th>
+                                            <th scope="col">Action <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td scope="row">1.</td>
+                                            <td><strong>Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Banned <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2.</td>
+                                            <td><strong>Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Approved <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3.</td>
+                                            <td><strong>Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Deactive <a href="#" class="table-sort"><i
+                                                    class="ion-android-arrow-dropdown"></i></a></strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">4.</td>
+                                            <td><strong>Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Banned</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">5.</td>
+                                            <td><strong>Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Banned</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">6.</td>
+                                            <td><strong>Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Banned</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">7.</td>
+                                            <td><strong>Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Banned</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">8.</td>
+                                            <td><strong>Sara Fitzgerald</strong></td>
+                                            <td>willms.scarlett@gmail.co</td>
+                                            <td>25 May 2019</td>
+                                            <td><strong class="color-accent">$420</strong></td>
+                                            <td><strong class="color-accent">65</strong></td>
+                                            <td><strong>Banned</strong></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Content -->
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="../../assets/javascripts/function.js"></script>
+</html>
