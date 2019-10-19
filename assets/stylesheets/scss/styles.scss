@@ -209,7 +209,7 @@ textarea.form-control {
   position: absolute;
   top: 50%;
   @include css3-compatible("transform", translateY(-50%));
-  z-index: 1;
+  z-index: 2;
   display: flex;
   align-items: center;
 
