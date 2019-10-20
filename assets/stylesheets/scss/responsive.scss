@@ -16,6 +16,13 @@
 
 /* For screen min width 768px */
 @media screen and (min-width: 768px) {
+  .banner {
+    max-height: 620px;
+    height: calc(100vh - 130px - 158px);
+    iframe {
+      max-height: inherit;
+    }
+  }
   .modal-dialog {
     max-width: 750px;
   }
@@ -32,14 +39,6 @@
 
 /* For screen min width 992px */
 @media screen and (min-width: 992px) {
-  .banner {
-    min-height: 620px;
-    padding: 68px 0 0;
-
-    iframe {
-      max-height: inherit;
-    }
-  }
   .alt-box {
     margin-left: calc((100vw - 930px) / (-2));
     margin-right: calc((100vw - 930px) / (-2));
@@ -61,6 +60,15 @@
     margin-right: calc((100vw - 1110px) / (-2));
     padding-left: calc((100vw - 1110px) / (2));
     padding-right: calc((100vw - 1110px) / (2));
+  }
+}
+
+@media screen and (max-height: 800px){
+  .section-dashboard{
+    margin-top: 50px;
+  }
+  .payment-button{
+    margin-bottom: 70px;
   }
 }
 
