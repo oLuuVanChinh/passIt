@@ -142,15 +142,16 @@ a,
   align-items: center;
   height: 50px;
   text-transform: uppercase;
-
+  outline: none;
   i {
     margin-right: 8px;
     font-size: 20px;
   }
 
-  &:hover, &:focus {
+  &:hover {
     color: $whiteColor;
     text-decoration: none;
+    outline: none;
   }
 }
 

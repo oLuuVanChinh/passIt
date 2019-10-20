@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24ee08e-2cd5-4ebb-ac0e-beea4afa5bc4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/alert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/stylesheets/common/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/stylesheets/common/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/stylesheets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/stylesheets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/stylesheets/scss/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/stylesheets/scss/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/wallet-history.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/wallet-history.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,16 +44,25 @@
         <entry file="file://$PROJECT_DIR$/assets/stylesheets/scss/styles.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="271">
-              <caret line="734" column="15" lean-forward="true" selection-start-line="734" selection-start-column="15" selection-end-line="734" selection-end-column="15" />
+              <caret line="521" column="13" selection-start-line="521" selection-start-column="2" selection-end-line="521" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/stylesheets/common/_base.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="153" column="18" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/wallet-history.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+            <state relative-caret-position="129">
+              <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -87,9 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>section-term</find>
-      <find>section-map mb-5</find>
-      <find>banner</find>
       <find>header</find>
       <find>.section-dashboard</find>
       <find>col-6</find>
@@ -117,13 +128,18 @@
       <find>header-right</find>
       <find>.admin-page</find>
       <find>.profile-info</find>
+      <find>widthraw</find>
+      <find>withdraw</find>
+      <find>.dgt-button</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;td&gt;&lt;a href=&quot;#&quot; class=&quot;color-accent&quot;&gt;&lt;i class=&quot;ion-android-arrow-dropright-circle icon-large&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/td&gt;</replace>
+      <replace>withdraw</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/templates</dir>
       <dir>$PROJECT_DIR$/templates/admin</dir>
+      <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -141,7 +157,6 @@
         <option value="$PROJECT_DIR$/templates/payment-complete.html" />
         <option value="$PROJECT_DIR$/templates/profile.html" />
         <option value="$PROJECT_DIR$/assets/stylesheets/common/_variables.scss" />
-        <option value="$PROJECT_DIR$/assets/stylesheets/common/_base.scss" />
         <option value="$PROJECT_DIR$/assets/javascripts/function.js" />
         <option value="$PROJECT_DIR$/templates/admin/withdraw-request.html" />
         <option value="$PROJECT_DIR$/templates/admin/statistic-infomation.html" />
@@ -151,6 +166,7 @@
         <option value="$PROJECT_DIR$/assets/stylesheets/scss/responsive.scss" />
         <option value="$PROJECT_DIR$/assets/stylesheets/scss/styles.scss" />
         <option value="$PROJECT_DIR$/templates/wallet-history.html" />
+        <option value="$PROJECT_DIR$/assets/stylesheets/common/_base.scss" />
       </list>
     </option>
   </component>
@@ -185,6 +201,13 @@
               <item name="passIt" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="passIt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="passIt" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="passIt" type="b2602c69:ProjectViewProjectNode" />
@@ -268,12 +291,12 @@
       <workItem from="1571192811786" duration="14869000" />
       <workItem from="1571454152361" duration="403000" />
       <workItem from="1571459385426" duration="518000" />
-      <workItem from="1571581890146" duration="2807000" />
+      <workItem from="1571581890146" duration="3430000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44094000" />
+    <option name="totallyTimeSpent" value="44717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1008" extended-state="0" />
@@ -283,7 +306,7 @@
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32921347" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32921347" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -402,7 +425,7 @@
         <state relative-caret-position="108">
           <caret line="395" column="66" lean-forward="true" selection-start-line="395" selection-start-column="66" selection-end-line="395" selection-end-column="66" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -429,13 +452,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/stylesheets/common/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -508,17 +524,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/stylesheets/scss/styles.scss">
+    <entry file="file://$PROJECT_DIR$/templates/wallet-history.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="734" column="15" lean-forward="true" selection-start-line="734" selection-start-column="15" selection-end-line="734" selection-end-column="15" />
+        <state relative-caret-position="129">
+          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/wallet-history.html">
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/scss/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+        <state relative-caret-position="271">
+          <caret line="521" column="13" selection-start-line="521" selection-start-column="2" selection-end-line="521" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/common/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="153" column="18" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
         </state>
       </provider>
     </entry>

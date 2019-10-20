@@ -13,21 +13,21 @@
     <link rel="stylesheet" href="../assets/stylesheets/css/styles.css">
 </head>
 <body>
-<!-- Modal Widthraw -->
-<div class="modal fade" id="widthrawModal" tabindex="-1" role="dialog" aria-labelledby="widthrawModalLabel" aria-hidden="true">
+<!-- Modal withdraw -->
+<div class="modal fade" id="withdrawModal" tabindex="-1" role="dialog" aria-labelledby="withdrawModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <h5 class="modal-title" id="exampleModalLabel">How many do you want to widthraw</h5>
-                <div class="widthraw-content">
+                <h5 class="modal-title" id="exampleModalLabel">How many do you want to withdraw</h5>
+                <div class="withdraw-content">
                     <span class="title text-center"><span>Balance</span>$250</span>
-                    <form id="widthraw-form">
+                    <form id="withdraw-form">
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="value">
-                                    <label class="mb-2">Widthraw</label>
+                                    <label class="mb-2">withdraw</label>
                                     <div class="value-input d-flex justify-content-between">
-                                        <input type="text" value="123" name="widthraw-value">
+                                        <input type="text" value="123" name="withdraw-value">
                                         <strong class="currency">$</strong>
                                     </div>
                                 </div>
@@ -36,26 +36,26 @@
                                 <div class="value">
                                     <label class="mb-2">Left</label>
                                     <div class="value-input d-flex justify-content-between">
-                                        <input type="text" value="234" name="widthraw-left">
+                                        <input type="text" value="234" name="withdraw-left">
                                         <strong class="currency">$</strong>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center">
+                        <div class="d-flex justify-content-center mt-4 mb-4 pb-5 withdraw-note">
                             <span class="text-center">Minimum Withdraw is 20$</span>
                         </div>
                         <div class="row">
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-md-6 offset-md-3">
                                 <div class="value">
                                     <label class="mb-2">Paypal account</label>
-                                    <div class="value-input d-flex justify-content-between">
-                                        <input type="text" value="christian_yost@yahoo.com" name="widthraw-value">
+                                    <div class="value-input">
+                                        <input type="text" value="christian_yost@yahoo.com" class="w-100" name="withdraw-value">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="widthraw-button text-center mt-5">
+                        <div class="withdraw-button text-center mt-5">
                             <button type="submit" class="dgt-button button-gray button-large">Request Admin</button>
                         </div>
                     </form>
@@ -241,7 +241,7 @@
                                             </div>
                                         </div>
                                         <div class="total-button d-flex justify-content-end">
-                                            <a href="#" class="dgt-button" data-toggle="modal" data-target="#widthrawModal">Widthraw</a>
+                                            <a href="#" class="dgt-button" data-toggle="modal" data-target="#withdrawModal">withdraw</a>
                                         </div>
                                     </div>
                                 </div>

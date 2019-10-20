@@ -656,8 +656,8 @@ textarea.form-control {
   }
 }
 
-/* Widthraw */
-.widthraw-content {
+/* withdraw */
+.withdraw-content {
   .title {
     text-align: center;
     font-size: 24px;
@@ -687,6 +687,10 @@ textarea.form-control {
     padding: 0;
     border: none;
     background-color: transparent;
+  }
+
+  .withdraw-note{
+    border-bottom: 1px solid rgba(116,112,138,0.4);
   }
 }
 

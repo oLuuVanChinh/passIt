@@ -125,13 +125,15 @@ a,
   -ms-flex-align: center;
   align-items: center;
   height: 50px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  outline: none; }
   .dgt-button i {
     margin-right: 8px;
     font-size: 20px; }
-  .dgt-button:hover, .dgt-button:focus {
+  .dgt-button:hover {
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    outline: none; }
 
 .button-white {
   border: 2px solid #fff;
@@ -864,21 +866,21 @@ textarea.form-control {
 .total-button .dgt-button {
   width: 100%; }
 
-/* Widthraw */
-.widthraw-content .title {
+/* withdraw */
+.withdraw-content .title {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
   color: #914EF9;
   display: block;
   margin: 24px 0 44px; }
-  .widthraw-content .title span {
+  .withdraw-content .title span {
     color: #000;
     font-size: 16px;
     vertical-align: middle;
     margin-right: 10px; }
 
-.widthraw-content .value-input {
+.withdraw-content .value-input {
   border: 1px solid #914EF9;
   border-radius: 4px;
   display: -webkit-box;
@@ -890,10 +892,13 @@ textarea.form-control {
   align-items: center;
   padding: 0 20px; }
 
-.widthraw-content input {
+.withdraw-content input {
   padding: 0;
   border: none;
   background-color: transparent; }
+
+.withdraw-content .withdraw-note {
+  border-bottom: 1px solid rgba(116, 112, 138, 0.4); }
 
 /* Section Profile */
 .section-profile {
@@ -1104,13 +1109,15 @@ a,
   -ms-flex-align: center;
   align-items: center;
   height: 50px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  outline: none; }
   .dgt-button i {
     margin-right: 8px;
     font-size: 20px; }
-  .dgt-button:hover, .dgt-button:focus {
+  .dgt-button:hover {
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    outline: none; }
 
 .button-white {
   border: 2px solid #fff;
@@ -1737,13 +1744,15 @@ a,
   -ms-flex-align: center;
   align-items: center;
   height: 50px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  outline: none; }
   .dgt-button i {
     margin-right: 8px;
     font-size: 20px; }
-  .dgt-button:hover, .dgt-button:focus {
+  .dgt-button:hover {
     color: #ffffff;
-    text-decoration: none; }
+    text-decoration: none;
+    outline: none; }
 
 .button-white {
   border: 2px solid #fff;
