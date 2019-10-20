@@ -734,7 +734,8 @@ textarea.form-control {
 
 .profile-info {
   > div {
-    height: 54px;
+    min-height: 54px;
+    padding: 10px 0;
     border-top: 1px solid rgba(116, 122, 138, 0.4);
   }
 
