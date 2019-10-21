@@ -325,6 +325,25 @@
         min-height: 138px;
         resize: none;
     }
+    .note-editor{
+        overflow: hidden;
+        width: 100%;
+    }
+    .note-editor .btn-group button:first-child,
+    .note-editor .btn-group button,
+    .note-editor .btn-group button:last-child{
+        width: inherit;
+        flex: inherit;
+        height: inherit;
+        margin-right: inherit;
+        background-color: inherit;
+        border-color: inherit;
+        font-size: 16px;
+        border-radius: 4px !important;
+    }
+    .note-popover .popover-content .note-color .dropdown-toggle, .card-header.note-toolbar .note-color .dropdown-toggle{
+        width: auto !important;
+    }
 }
 
 @media screen and (min-width: 1200px) {

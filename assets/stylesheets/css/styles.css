@@ -1575,6 +1575,27 @@ a,
   min-height: 138px;
   resize: none; }
 
+.admin-page .note-editor {
+  overflow: hidden;
+  width: 100%; }
+
+.admin-page .note-editor .btn-group button:first-child,
+.admin-page .note-editor .btn-group button,
+.admin-page .note-editor .btn-group button:last-child {
+  width: inherit;
+  -webkit-box-flex: inherit;
+  -ms-flex: inherit;
+  flex: inherit;
+  height: inherit;
+  margin-right: inherit;
+  background-color: inherit;
+  border-color: inherit;
+  font-size: 16px;
+  border-radius: 4px !important; }
+
+.admin-page .note-popover .popover-content .note-color .dropdown-toggle, .admin-page .card-header.note-toolbar .note-color .dropdown-toggle {
+  width: auto !important; }
+
 @media screen and (min-width: 1200px) {
   .modal-custom .modal-dialog {
     max-width: 1140px;
