@@ -16,27 +16,6 @@
 
 /* For screen min width 768px */
 @media screen and (min-width: 768px) {
-<<<<<<< HEAD
-  .banner {
-    max-height: 620px;
-    height: calc(100vh - 130px - 158px);
-    iframe {
-      max-height: inherit;
-    }
-  }
-  .modal-dialog {
-    max-width: 750px;
-  }
-  .section-dashboard {
-    margin: 100px 0 0;
-  }
-  .alt-box {
-    margin-left: calc((100vw - 690px) / (-2));
-    margin-right: calc((100vw - 690px) / (-2));
-    padding-left: calc((100vw - 690px) / (2));
-    padding-right: calc((100vw - 690px) / (2));
-  }
-=======
     .banner {
         max-height: 620px;
         height: calc(100vh - 130px - 158px);
@@ -56,22 +35,10 @@
         padding-left: calc((100vw - 690px) / (2));
         padding-right: calc((100vw - 690px) / (2));
     }
->>>>>>> 79e205a91e1e3c13a322d12bbde27925bb92ce3c
 }
 
 /* For screen min width 992px */
 @media screen and (min-width: 992px) {
-<<<<<<< HEAD
-  .alt-box {
-    margin-left: calc((100vw - 930px) / (-2));
-    margin-right: calc((100vw - 930px) / (-2));
-    padding-left: calc((100vw - 930px) / (2));
-    padding-right: calc((100vw - 930px) / (2));
-  }
-  .tab-content{
-    padding: 25px 65px;
-  }
-=======
     .alt-box {
         margin-left: calc((100vw - 930px) / (-2));
         margin-right: calc((100vw - 930px) / (-2));
@@ -81,7 +48,6 @@
     .tab-content {
         padding: 25px 65px;
     }
->>>>>>> 79e205a91e1e3c13a322d12bbde27925bb92ce3c
 }
 
 /* For screen min width 1200px */
@@ -96,39 +62,12 @@
         padding-right: calc((100vw - 1110px) / (2));
     }
 }
-
-<<<<<<< HEAD
-@media screen and (max-height: 800px){
-  .section-dashboard{
-    margin-top: 50px;
-  }
-  .payment-button{
-    margin-bottom: 70px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .xs-pr-5 {
-    padding-right: 80px;
-  }
-  .menu-user {
-    > a {
-      > span {
-        display: none;
-      }
-    }
-  }
-  .nav-inner {
-    h1 {
-      font-size: 18px;
-=======
 @media screen and (max-height: 800px) {
     .section-dashboard {
         margin-top: 50px;
     }
     .payment-button {
         margin-bottom: 70px;
->>>>>>> 79e205a91e1e3c13a322d12bbde27925bb92ce3c
     }
 }
 

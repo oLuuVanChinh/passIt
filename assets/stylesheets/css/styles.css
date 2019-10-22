@@ -1638,12 +1638,9 @@ a,
   min-height: 138px;
   resize: none; }
 
-<<<<<<< HEAD
-=======
 .admin-page .dataTable {
   width: 100% !important; }
 
->>>>>>> 79e205a91e1e3c13a322d12bbde27925bb92ce3c
 .admin-page .dataTables_filter {
   position: absolute;
   right: 100px;
@@ -1655,21 +1652,6 @@ a,
     padding: 0 10px;
     width: 230px; }
 
-<<<<<<< HEAD
-.admin-page .dataTables_wrapper .dataTables_paginate .paginate_button.current, .admin-page .dataTables_wrapper .dataTables_paginate .paginate_button.current:active {
-  color: #000 !important;
-  border: 1px solid #979797;
-  background: #D0DBF2 !important;
-  border-color: #D0DBF2 !important; }
-
-.admin-page .dataTables_wrapper .dataTables_paginate .paginate_button, .admin-page .dataTables_wrapper .dataTables_paginate .ellipsis {
-  color: #000 !important;
-  border-right: 1px solid #c8ced3 !important; }
-
-.admin-page .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-  border-color: #D0DBF2 !important;
-  background: #D0DBF2 !important; }
-=======
 .admin-page .dataTables_wrapper {
   position: relative; }
   .admin-page .dataTables_wrapper .dataTables_paginate .paginate_button.current, .admin-page .dataTables_wrapper .dataTables_paginate .paginate_button.current:active {
@@ -1683,7 +1665,6 @@ a,
   .admin-page .dataTables_wrapper .dataTables_paginate .paginate_button, .admin-page .dataTables_wrapper .dataTables_paginate .ellipsis {
     color: #000 !important;
     border-right: 1px solid #c8ced3 !important; }
->>>>>>> 79e205a91e1e3c13a322d12bbde27925bb92ce3c
 
 .admin-page div.dataTables_paginate {
   margin-top: -34px; }
@@ -1691,8 +1672,6 @@ a,
 .admin-page table.dataTable thead .sorting:before, .admin-page table.dataTable thead .sorting:after, .admin-page table.dataTable thead .sorting_asc:before, .admin-page table.dataTable thead .sorting_asc:after, .admin-page table.dataTable thead .sorting_desc:before, .admin-page table.dataTable thead .sorting_desc:after, .admin-page table.dataTable thead .sorting_asc_disabled:before, .admin-page table.dataTable thead .sorting_asc_disabled:after, .admin-page table.dataTable thead .sorting_desc_disabled:before, .admin-page table.dataTable thead .sorting_desc_disabled:after {
   font-size: 1em; }
 
-<<<<<<< HEAD
-=======
 .admin-page .note-editor {
   overflow: hidden;
   width: 100%; }
@@ -1714,7 +1693,6 @@ a,
 .admin-page .note-popover .popover-content .note-color .dropdown-toggle, .admin-page .card-header.note-toolbar .note-color .dropdown-toggle {
   width: auto !important; }
 
->>>>>>> 79e205a91e1e3c13a322d12bbde27925bb92ce3c
 @media screen and (min-width: 1200px) {
   .modal-custom .modal-dialog {
     max-width: 1140px;
@@ -2074,13 +2052,10 @@ a,
   .payment-button {
     margin-bottom: 70px; } }
 
-<<<<<<< HEAD
-=======
 @media screen and (min-height: 700px) {
   .banner iframe {
     max-height: calc(100vh - 130px - 158px - 180px); } }
 
->>>>>>> 79e205a91e1e3c13a322d12bbde27925bb92ce3c
 @media screen and (max-width: 767px) {
   .xs-pr-5 {
     padding-right: 80px; }
