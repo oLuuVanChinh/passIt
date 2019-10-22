@@ -223,6 +223,9 @@
                 font-size: 22px;
             }
         }
+        td, th{
+            font-size: 14px;
+        }
     }
     .tab-content {
         padding: 24px 0 0;
@@ -247,7 +250,7 @@
         .nav-link {
             font-weight: bold;
             height: 52px;
-            padding: 0 30px;
+            padding: 0 20px;
             display: flex;
             align-items: center;
             border-radius: 8px 8px 0 0;
@@ -349,6 +352,11 @@
             width: 230px;
         }
     }
+    .tab-content{
+        .dataTables_filter{
+            top: -67px;
+        }
+    }
     .dataTables_wrapper{
         position: relative;
         .dataTables_paginate{
@@ -404,6 +412,21 @@
         .modal-dialog {
             max-width: 1140px;
             margin: 184px auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .admin-page {
+        .nav-tabs {
+            .nav-link{
+                padding: 0 30px;
+            }
+        }
+        .table{
+            th, td{
+                font-size: 16px;
+            }
         }
     }
 }

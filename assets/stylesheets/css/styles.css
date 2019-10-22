@@ -1535,6 +1535,8 @@ a,
     vertical-align: -2px; }
     .admin-page .table .table-sort i {
       font-size: 22px; }
+  .admin-page .table td, .admin-page .table th {
+    font-size: 14px; }
 
 .admin-page .tab-content {
   padding: 24px 0 0;
@@ -1558,7 +1560,7 @@ a,
   .admin-page .nav-tabs .nav-link {
     font-weight: bold;
     height: 52px;
-    padding: 0 30px;
+    padding: 0 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1652,6 +1654,9 @@ a,
     padding: 0 10px;
     width: 230px; }
 
+.admin-page .tab-content .dataTables_filter {
+  top: -67px; }
+
 .admin-page .dataTables_wrapper {
   position: relative; }
   .admin-page .dataTables_wrapper .dataTables_paginate .paginate_button.current, .admin-page .dataTables_wrapper .dataTables_paginate .paginate_button.current:active {
@@ -1697,6 +1702,12 @@ a,
   .modal-custom .modal-dialog {
     max-width: 1140px;
     margin: 184px auto; } }
+
+@media screen and (min-width: 1600px) {
+  .admin-page .nav-tabs .nav-link {
+    padding: 0 30px; }
+  .admin-page .table th, .admin-page .table td {
+    font-size: 16px; } }
 
 /**
  * Base Rules
