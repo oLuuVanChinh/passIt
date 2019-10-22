@@ -16,8 +16,9 @@
     #header {
         min-height: 83px;
         padding: 0 35px 0 60px;
-        position: relative;
-        z-index: 1;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
         background-color: #fff;
     }
     #logo {
@@ -42,15 +43,23 @@
     }
     .sidebar {
         max-width: 17%;
-        flex: 0 0 17%;
+        flex: 0 0 280px;
         background-color: $accent;
         color: #fff;
+        min-width: 280px;
+        position: relative;
+        .sidebar-content{
+            position: fixed;
+            width: 100%;
+            max-width: 280px;
+        }
     }
     #content {
         padding: 0;
     }
     .sidebar, .content-primary {
         min-height: calc(100vh - 83px);
+        margin-top: 83px;
     }
     .admin-statement {
         background-color: #AC76FF;
@@ -104,7 +113,7 @@
         }
     }
     .content-primary {
-        padding: 50px 35px 0 45px;
+        padding: 50px 35px 30px 45px;
     }
     .title {
         font-size: 24px;
@@ -130,13 +139,13 @@
                 max-width: 100%;
             }
         }
-        .avatar{
+        .avatar {
             padding: 0;
             position: relative;
             overflow: hidden;
             display: flex;
             align-items: stretch;
-            img{
+            img {
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
@@ -165,6 +174,9 @@
     }
     .static-table {
         padding: 0 16px 16px;
+        .static-head{
+            height: 52px;
+        }
         .title {
             font-size: 16px;
             margin-bottom: 0;
@@ -246,16 +258,6 @@
             }
         }
     }
-    [data-toggle="modal"] {
-        cursor: pointer;
-    }
-    [data-dismiss="modal"] {
-        position: absolute;
-        right: -24px;
-        font-size: 24px;
-        top: -28px;
-        cursor: pointer;
-    }
     .modal-content {
         background-color: transparent;
         border: none;
@@ -263,32 +265,32 @@
     .modal-body {
         padding: 0;
     }
-    .modal-footer{
+    .modal-footer {
         border: none;
         margin-top: 8px;
     }
-    .icon-large{
+    .icon-large {
         color: #75B3E0;
         font-size: 30px;
         line-height: 1;
     }
-    .form-wrap, .modal-footer{
-        .dgt-button{
+    .form-wrap, .modal-footer {
+        .dgt-button {
             height: 36px;
             text-transform: capitalize;
             font-weight: bold;
             width: 220px;
         }
     }
-    .form-head{
-        .title{
+    .form-head {
+        .title {
             font-size: 16px;
             border-bottom: 1px solid #c9cacf;
             line-height: 52px;
             padding-left: 48px;
         }
     }
-    .form-content{
+    .form-content {
         padding: 0 68px;
     }
     .large-gutters {
@@ -301,36 +303,45 @@
             padding-left: 32px;
         }
     }
-    .form-control, .input-group-text{
+    .form-control, .input-group-text {
         height: 36px;
         background-color: transparent;
         border-color: #747A8A;
     }
-    .form-control{
-        &:focus{
+    .form-control {
+        &:focus {
             box-shadow: none;
             z-index: 0;
         }
     }
-    .input-group-text{
+    .input-group-text {
         border-right: none;
         background-color: #fff;
         font-size: 20px;
         z-index: 1;
         color: #000;
+        padding: 0 14px;
     }
-    .form-group{
+    .input-group{
+        > .form-control{
+            padding-left: 0;
+        }
+    }
+    .form-group {
         margin-bottom: 32px;
     }
-    textarea{
+    textarea {
         min-height: 138px;
         resize: none;
     }
-    .dataTables_filter{
+    .dataTable{
+        width: 100% !important;
+    }
+    .dataTables_filter {
         position: absolute;
         right: 100px;
         top: -43px;
-        input[type="search"]{
+        input[type="search"] {
             border: 1px solid #dee2e6;
             height: 36px;
             border-radius: 4px;
@@ -338,25 +349,53 @@
             width: 230px;
         }
     }
-    .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:active {
-        color: #000!important;
-        border: 1px solid #979797;
-        background: #D0DBF2!important;
-        border-color: #D0DBF2!important;
+    .dataTables_wrapper{
+        position: relative;
+        .dataTables_paginate{
+            .paginate_button{
+                &.current, &.current:active{
+                    color: #000 !important;
+                    border: 1px solid #979797;
+                    background: #D0DBF2 !important;
+                    border-color: #D0DBF2 !important;
+                }
+                &:hover{
+                    border-color: #D0DBF2 !important;
+                    background: #D0DBF2 !important;
+                }
+            }
+            .paginate_button, .ellipsis{
+                color: #000 !important;
+                border-right: 1px solid #c8ced3 !important;
+            }
+        }
     }
-    .dataTables_wrapper .dataTables_paginate .paginate_button, .dataTables_wrapper .dataTables_paginate .ellipsis{
-        color: #000 !important;
-        border-right: 1px solid #c8ced3 !important;
-    }
-    .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
-        border-color: #D0DBF2!important;
-        background: #D0DBF2!important;
-    }
-    div.dataTables_paginate{
+
+    div.dataTables_paginate {
         margin-top: -34px;
     }
-    table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting_desc_disabled:after{
+
+    table.dataTable thead .sorting:before, table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:before, table.dataTable thead .sorting_desc_disabled:after {
         font-size: 1em;
+    }
+    .note-editor {
+        overflow: hidden;
+        width: 100%;
+    }
+    .note-editor .btn-group button:first-child,
+    .note-editor .btn-group button,
+    .note-editor .btn-group button:last-child {
+        width: inherit;
+        flex: inherit;
+        height: inherit;
+        margin-right: inherit;
+        background-color: inherit;
+        border-color: inherit;
+        font-size: 16px;
+        border-radius: 4px !important;
+    }
+    .note-popover .popover-content .note-color .dropdown-toggle, .card-header.note-toolbar .note-color .dropdown-toggle {
+        width: auto !important;
     }
 }
 

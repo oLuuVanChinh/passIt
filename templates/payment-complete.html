@@ -13,6 +13,39 @@
     <link rel="stylesheet" href="../assets/stylesheets/css/styles.css">
 </head>
 <body>
+<!-- Modal Copy -->
+<div class="modal fade" id="copyModal" tabindex="-1" role="dialog" aria-labelledby="copyModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <span aria-hidden="true" data-dismiss="modal"><i class="ion-close-circled"></i></span>
+            <div class="modal-body">
+                <h5 class="modal-title" id="exampleModalLabel">It’s time to grab some money</h5>
+                <form id="couponCode" class="form-coupon mt-5">
+                    <div class="form-group mb-0 position-relative">
+                        <input class="form-control color-accent" type="text" name="coupon" value="http://passit.com/aue78ivicscd/" placeholder="Coupon code"/>
+                        <a class="form-addon color-accent copy-code" href="#" id="copy-code">Copy</a>
+                    </div>
+                    <span class="d-flex justify-content-center mt-4">Link has been copy to clipboard</span>
+                    <div class="text-center mt-5">
+                        <button type="submit" class="dgt-button button-gray button-large">Done</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Video -->
+<div class="modal fade modal-video" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <span aria-hidden="true" data-dismiss="modal"><i class="ion-close-circled"></i></span>
+            <div class="modal-body">
+                <iframe src="https://player.vimeo.com/video/102324139" width="777" height="437"
+                        frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="dgt-wrapper">
     <div class="dgt-page">
         <!-- Header -->
@@ -107,14 +140,14 @@
                                     <span class="color-accent">All you have to do just share as many people as posible with your Passit<br/>So go ahead, click the Passit button and share</span>
                                 </div>
                                 <div class="payment-button alt-box bg-accent">
-                                    <a href="#" class="dgt-button button-light">
+                                    <a href="#" class="dgt-button button-light" data-toggle="modal" data-target="#copyModal">
                                         <span>Passit</span>
                                         <i class="ion-arrow-right-b"></i>
                                     </a>
                                 </div>
                                 <div class="payment-tutorials text-center">
                                     <h3>Having problem? Need help?</h3>
-                                    <a href="#" class="dgt-button button-gray button-large">Tutorial Video</a>
+                                    <a href="#" class="dgt-button button-gray button-large" data-toggle="modal" data-target="#videoModal">Tutorial Video</a>
                                 </div>
                             </div>
                         </div>
