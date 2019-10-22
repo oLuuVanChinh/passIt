@@ -148,7 +148,7 @@ a,
     font-size: 20px;
   }
 
-  &:hover, &:focus {
+  &:hover {
     color: $whiteColor;
     text-decoration: none;
   }
@@ -167,6 +167,9 @@ a,
   font-size: 24px;
   color: $accent;
   border-radius: 32px;
+  &:hover{
+    color: $accent;
+  }
 
   &:after {
     border: 1px solid $accent;
@@ -283,6 +286,17 @@ a,
   }
 }
 
+[data-toggle="modal"] {
+  cursor: pointer;
+}
+[data-dismiss="modal"] {
+  position: absolute;
+  right: -24px;
+  font-size: 24px;
+  top: -28px;
+  cursor: pointer;
+}
+
 .modal-content{
   background-color: #F7F7F7;
   border-color: $accent;
@@ -299,4 +313,18 @@ a,
   border-bottom: 1px solid $accent;
   text-align: center;
   text-transform: uppercase;
+}
+
+.modal-video{
+  .modal-content{
+    border: none;
+    background-color: transparent;
+  }
+  .modal-body{
+    padding: 0;
+  }
+  iframe{
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
