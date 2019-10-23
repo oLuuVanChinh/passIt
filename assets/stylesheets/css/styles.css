@@ -1701,7 +1701,7 @@ a,
 @media screen and (min-width: 1200px) {
   .modal-custom .modal-dialog {
     max-width: 1140px;
-    margin: 184px auto; } }
+    margin: 184px auto 30px; } }
 
 @media screen and (min-width: 1600px) {
   .admin-page .nav-tabs .nav-link {
@@ -2050,7 +2050,7 @@ a,
 /* For screen min width 1200px */
 @media screen and (min-width: 1200px) {
   .modal-dialog {
-    margin: 252px auto; }
+    margin: 252px auto 30px; }
   .alt-box {
     margin-left: calc((100vw - 1110px) / (-2));
     margin-right: calc((100vw - 1110px) / (-2));

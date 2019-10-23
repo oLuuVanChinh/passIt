@@ -53,7 +53,7 @@
 /* For screen min width 1200px */
 @media screen and (min-width: 1200px) {
     .modal-dialog {
-        margin: 252px auto;
+        margin: 252px auto 30px;
     }
     .alt-box {
         margin-left: calc((100vw - 1110px) / (-2));
