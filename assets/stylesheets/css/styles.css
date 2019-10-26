@@ -134,6 +134,10 @@ a,
     color: #ffffff;
     text-decoration: none;
     outline: none; }
+  .dgt-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
 
 .button-white {
   border: 2px solid #fff;
@@ -1145,6 +1149,10 @@ a,
     color: #ffffff;
     text-decoration: none;
     outline: none; }
+  .dgt-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
 
 .button-white {
   border: 2px solid #fff;
@@ -1842,6 +1850,10 @@ a,
     color: #ffffff;
     text-decoration: none;
     outline: none; }
+  .dgt-button:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
 
 .button-white {
   border: 2px solid #fff;
