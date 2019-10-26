@@ -69,6 +69,7 @@ body {
   &:focus{
     outline: none;
     box-shadow: none;
+    border-color: rgba(116, 122, 138, 0.4);
   }
 
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
