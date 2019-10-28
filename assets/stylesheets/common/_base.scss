@@ -148,13 +148,9 @@ a,
     font-size: 20px;
   }
 
-  &:hover {
+  &:hover, &:focus {
     color: $whiteColor;
     text-decoration: none;
-    outline: none;
-  }
-
-  &:focus{
     outline: none;
     box-shadow: none;
   }
@@ -203,7 +199,7 @@ a,
   font-size: 18px;
   text-transform: none;
 
-  &:hover {
+  &:hover, &:focus {
     color: #000;
   }
 }

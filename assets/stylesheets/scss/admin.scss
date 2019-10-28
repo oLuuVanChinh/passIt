@@ -18,7 +18,7 @@
         padding: 0 35px 0 60px;
         position: fixed;
         width: 100%;
-        z-index: 2;
+        z-index: 1000;
         background-color: #fff;
     }
     #logo {
@@ -43,15 +43,15 @@
     }
     .sidebar {
         max-width: 17%;
-        flex: 0 0 280px;
+        flex: 0 0 218px;
         background-color: $accent;
         color: #fff;
-        min-width: 280px;
+        min-width: 218px;
         position: relative;
         .sidebar-content{
             position: fixed;
             width: 100%;
-            max-width: 280px;
+            max-width: 218px;
         }
     }
     #content {
@@ -61,6 +61,10 @@
         min-height: calc(100vh - 83px);
         margin-top: 83px;
     }
+    .content-primary{
+        flex: calc(100% - 218px);
+        max-width: calc(100% - 218px);
+    }
     .admin-statement {
         background-color: #AC76FF;
         padding: 54px 16px 3px;
@@ -69,14 +73,15 @@
         border-bottom: 1px solid #fff;
         padding: 9px 0;
         line-height: 1;
+        font-size: 12px;
         &:last-child {
             border-bottom: none;
         }
         strong {
-            font-size: 18px;
+            font-size: 16px;
         }
         .total {
-            font-size: 24px;
+            font-size: 22px;
         }
     }
     .admin-menu {
@@ -93,7 +98,7 @@
         }
         a {
             color: #fff;
-            font-size: 18px;
+            font-size: 16px;
             position: relative;
             .number {
                 font-size: 10px;
@@ -112,8 +117,8 @@
             }
         }
     }
-    .content-primary {
-        padding: 50px 35px 30px 45px;
+    .content-inner {
+        padding: 40px 25px 20px 25px;
     }
     .title {
         font-size: 24px;
@@ -169,8 +174,12 @@
         }
     }
     .static-number {
+        font-size: 14px;
         margin-right: 55px;
         min-width: 140px;
+        .number{
+            font-size: 30px;
+        }
     }
     .static-table {
         padding: 0 16px 16px;
@@ -250,11 +259,12 @@
         .nav-link {
             font-weight: bold;
             height: 52px;
-            padding: 0 20px;
+            padding: 0 15px;
             display: flex;
             align-items: center;
             border-radius: 8px 8px 0 0;
             border: none;
+            font-size: 14px;
             &.active {
                 background-color: $accent;
                 color: #fff;
@@ -387,7 +397,6 @@
         font-size: 1em;
     }
     .note-editor {
-        overflow: hidden;
         width: 100%;
     }
     .note-editor .btn-group button:first-child,
@@ -416,6 +425,50 @@
     }
 }
 
+@media screen and (min-width: 1400px) {
+    .admin-page{
+        .content-inner {
+            padding: 50px 35px 30px 45px;
+        }
+        .static-number{
+            font-size: 16px;
+            .number{
+                font-size: 36px;
+            }
+        }
+        .statement-item{
+            font-size: 16px;
+            strong {
+                font-size: 18px;
+            }
+            .total{
+                font-size: 24px;
+            }
+        }
+        .admin-menu {
+            a{
+                font-size: 18px;
+            }
+        }
+        .sidebar{
+            min-width: 280px;
+            flex: 0 0 280px;
+            .sidebar-content{
+                max-width: 280px;
+            }
+        }
+        .content-primary{
+            flex: calc(100% - 280px);
+            max-width: calc(100% - 280px);
+        }
+        .nav-tabs {
+            .nav-link{
+                font-size: 16px;
+                padding: 0 20px;
+            }
+        }
+    }
+}
 @media screen and (min-width: 1600px) {
     .admin-page {
         .nav-tabs {
