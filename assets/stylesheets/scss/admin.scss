@@ -126,7 +126,7 @@
         margin-bottom: 25px;
     }
     .static-wrap {
-        padding: 32px 68px 14px;
+        padding: 32px 68px;
         min-height: 235px;
         .logo {
             width: 128px;
@@ -413,6 +413,27 @@
     }
     .note-popover .popover-content .note-color .dropdown-toggle, .card-header.note-toolbar .note-color .dropdown-toggle {
         width: auto !important;
+    }
+}
+.panel-coupon{
+    max-width: 195px;
+    label{
+        font-size: 16px;
+        color: #6E6E6E;
+        font-weight: bold;
+    }
+    input{
+        border: 1px solid #747A8A;
+        padding: 0 10px;
+        text-align: center;
+        border-radius: 4px;
+        height: 36px;
+    }
+    .dgt-button{
+        height: 36px;
+        text-transform: capitalize;
+        font-weight: bold;
+        width: 100%;
     }
 }
 
