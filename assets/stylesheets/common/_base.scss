@@ -172,6 +172,9 @@ a,
   &:hover{
     color: $accent;
   }
+  &:focus{
+    color: $accent;
+  }
 
   &:after {
     border: 1px solid $accent;
@@ -208,6 +211,9 @@ a,
   border: 1px solid #C3C5CC;
   background-color: #FFFFFF;
   color: #000;
+  &:hover, &:focus{
+    color: #000;
+  }
 }
 
 .button-large {
@@ -293,20 +299,17 @@ a,
 }
 [data-dismiss="modal"] {
   position: absolute;
-  right: -24px;
+  right: -4px;
   font-size: 24px;
-  top: -28px;
+  top: -12px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .modal-content{
   background-color: #F7F7F7;
   border-color: $accent;
   border-radius: 4px;
-}
-
-.modal-body{
-  padding: 20px 97px 48px;
 }
 .modal-title{
   font-size: 24px;
