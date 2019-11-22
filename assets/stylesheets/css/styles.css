@@ -1661,7 +1661,7 @@ a,
 
 .admin-page .dataTables_filter {
   position: absolute;
-  right: 100px;
+  right: 2;
   top: -43px; }
   .admin-page .dataTables_filter input[type="search"] {
     border: 1px solid #dee2e6;
