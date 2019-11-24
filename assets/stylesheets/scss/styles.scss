@@ -798,6 +798,27 @@ textarea.form-control {
     }
   }
 }
+.social{
+  ul{
+    display: flex;
+    justify-content: center;
+  }
+  li{
+    margin: 0 20px;
+  }
+  .social-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    i{
+      font-size: 40px;
+    }
+  }
+}
 
 @import "admin";
 @import "responsive";

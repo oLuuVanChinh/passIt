@@ -1019,6 +1019,34 @@ textarea.form-control {
     font-size: 20px;
     margin-right: 16px; }
 
+.social ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.social li {
+  margin: 0 20px; }
+
+.social .social-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .social .social-icon i {
+    font-size: 40px; }
+
 /**
  * Base Rules
  */
@@ -1667,7 +1695,7 @@ a,
 
 .admin-page .dataTables_filter {
   position: absolute;
-  right: 2;
+  right: 0;
   top: -43px; }
   .admin-page .dataTables_filter input[type="search"] {
     border: 1px solid #dee2e6;
@@ -2125,7 +2153,9 @@ a,
   .view-statement {
     padding: 0 28px 0 15px; }
   #logo {
-    text-align: left; } }
+    text-align: left; }
+  .social li {
+    margin: 0 43px; } }
 
 /* For screen min width 992px */
 @media screen and (min-width: 992px) {
