@@ -2198,11 +2198,13 @@ a,
 
 @media screen and (max-width: 991px) {
   .md-pr-5 {
-    padding-right: 150px; } }
+    padding-right: 150px;
+    padding-left: 150px; } }
 
 @media screen and (max-width: 767px) {
   .md-pr-5 {
-    padding-right: 80px; }
+    padding-right: 80px;
+    padding-left: 80px; }
   .menu-user > a > span {
     display: none; }
   .nav-inner h1 {
