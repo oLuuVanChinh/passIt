@@ -1027,12 +1027,12 @@ textarea.form-control {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.social li {
-  margin: 0 20px; }
-
 .social .social-icon {
   width: 60px;
   height: 60px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 60px;
+  flex: 0 0 60px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2183,8 +2183,6 @@ a,
     padding: 0 28px 0 15px; }
   #logo {
     text-align: left; }
-  .social li {
-    margin: 0 43px; }
   html[dir='rtl'] .section-profile .nav {
     margin-left: 0;
     margin-right: 16px; }

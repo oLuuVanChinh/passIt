@@ -803,12 +803,10 @@ textarea.form-control {
     display: flex;
     justify-content: center;
   }
-  li{
-    margin: 0 20px;
-  }
   .social-icon{
     width: 60px;
     height: 60px;
+    flex: 0 0 60px;
     border-radius: 50%;
     display: flex;
     color: #fff;
