@@ -1047,6 +1047,35 @@ textarea.form-control {
   .social .social-icon i {
     font-size: 40px; }
 
+/* RTL */
+html[dir='rtl'] .dropdown-toggle:after {
+  margin-right: .255em;
+  margin-left: 0; }
+
+html[dir='rtl'] .menu-user .dgt-button i {
+  margin-right: 0;
+  margin-left: 4px; }
+
+html[dir='rtl'] .menu-user .sub-menu a i {
+  margin-right: 0;
+  margin-left: 8px; }
+
+html[dir='rtl'] .price label {
+  margin-right: 0;
+  margin-left: 18px; }
+
+html[dir='rtl'] .withdraw-content .title span {
+  margin-left: 10px;
+  margin-right: 0; }
+
+html[dir='rtl'] .profile-info label {
+  margin-right: 0;
+  margin-left: 40px; }
+
+html[dir='rtl'] .icon-box .icon i {
+  margin-right: 0;
+  margin-left: 16px; }
+
 /**
  * Base Rules
  */
@@ -2155,7 +2184,17 @@ a,
   #logo {
     text-align: left; }
   .social li {
-    margin: 0 43px; } }
+    margin: 0 43px; }
+  html[dir='rtl'] .section-profile .nav {
+    margin-left: 0;
+    margin-right: 16px; }
+  html[dir='rtl'] .section-profile .nav-link.active {
+    transform: translateX(16px);
+    -webkit-transform: translateX(16px);
+    -khtml-transform: translateX(16px);
+    -moz-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    -o-transform: translateX(16px); } }
 
 /* For screen min width 992px */
 @media screen and (min-width: 992px) {

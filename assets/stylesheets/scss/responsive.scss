@@ -62,6 +62,20 @@
             margin: 0 43px;
         }
     }
+    html[dir='rtl'] {
+        .section-profile {
+            .nav{
+                margin-left: 0;
+                margin-right: 16px;
+            }
+            .nav-link{
+                &.active{
+                    @include css3-compatible("transform", translateX(16px));
+                }
+            }
+        }
+    }
+
 }
 
 /* For screen min width 992px */

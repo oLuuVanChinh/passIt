@@ -820,6 +820,60 @@ textarea.form-control {
   }
 }
 
+/* RTL */
+html[dir='rtl'] {
+  .dropdown-toggle{
+    &:after{
+      margin-right: .255em;
+      margin-left: 0;
+    }
+  }
+  .menu-user {
+    .dgt-button {
+      i{
+        margin-right: 0;
+        margin-left: 4px;
+      }
+    }
+    .sub-menu {
+      a {
+        i{
+          margin-right: 0;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+  .price {
+    label{
+      margin-right: 0;
+      margin-left: 18px;
+    }
+  }
+  .withdraw-content {
+    .title {
+      span{
+        margin-left: 10px;
+        margin-right: 0;
+      }
+    }
+  }
+  .profile-info {
+    label{
+      margin-right: 0;
+      margin-left: 40px;
+    }
+  }
+  .icon-box {
+    .icon {
+      i{
+        margin-right: 0;
+        margin-left: 16px;
+      }
+    }
+  }
+}
+
 @import "admin";
 @import "responsive";
 
