@@ -140,6 +140,9 @@
     }
 }
 @media screen and (max-width: 767px) {
+    body{
+        overflow-x: hidden;
+    }
     .md-pr-5{
         padding-right: 80px;
         padding-left: 80px;

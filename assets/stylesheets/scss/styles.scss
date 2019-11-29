@@ -25,10 +25,10 @@ body {
 }
 
 .alt-box {
-  margin-left: calc((100vw - 15px) / (-2));
-  margin-right: calc((100vw - 15px) / (-2));
-  padding-left: calc((100vw - 15px) / (2));
-  padding-right: calc((100vw - 15px) / (2));
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .bg-gradient{
