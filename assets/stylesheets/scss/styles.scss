@@ -870,6 +870,13 @@ html[dir='rtl'] {
       }
     }
   }
+  .coupon-info {
+    .icon{
+      margin-right: 0;
+      margin-left: 8px;
+      direction: ltr;
+    }
+  }
 }
 
 @import "admin";
